@@ -1,12 +1,12 @@
 app/
  └─ java/.../recipeapp/
      ├─ data/
-     │   ├─ Recipe.kt
-     │   └─ FakeRecipes.kt        // 50 item
+     │   ├─ Recipe.kt              // ? Generating Type of Recipe
+     │   └─ FakeRecipes.kt        // ? Fulfilling more detail of each Recipe (50 Recipe)
      ├─ vm/
-     │   └─ RecipeViewModel.kt
+     │   └─ RecipeViewModel.kt // Steve
      ├─ ui/
-     │   ├─ HomeScreen.kt         // owner B
-     │   ├─ FavoritesScreen.kt    // owner C
-     │   └─ DetailsScreen.kt      // owner D
-     └─ MainActivity.kt           // owner A (NavHost)
+     │   ├─ HomeScreen.kt         // ? 
+     │   ├─ FavoritesScreen.kt    // ihuegi
+     │   └─ DetailsScreen.kt      // ?
+     └─ MainActivity.kt           // ? (NavHost)
