@@ -2,7 +2,7 @@ app/
  └─ java/.../recipeapp/
      ├─ data/
      │   ├─ Recipe.kt
-     │   └─ FakeRecipes.kt        // 50 items live here (only one person edits)
+     │   └─ FakeRecipes.kt        // 50 item
      ├─ vm/
      │   └─ RecipeViewModel.kt
      ├─ ui/
