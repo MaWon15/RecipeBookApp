@@ -1,3 +1,5 @@
+Draft Structure of App
+
 app/
  └─ java/.../recipeapp/
      ├─ data/
