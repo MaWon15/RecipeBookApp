@@ -8,7 +8,7 @@ app/
      ├─ vm/
      │   └─ RecipeViewModel.kt // Steve
      ├─ ui/
-     │   ├─ HomeScreen.kt         // ? 
+     │   ├─ HomeScreen.kt         // Diana 
      │   ├─ FavoritesScreen.kt    // ihuegi
      │   └─ DetailsScreen.kt      // ?
      └─ MainActivity.kt           // ? (NavHost)
