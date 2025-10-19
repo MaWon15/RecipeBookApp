@@ -3,8 +3,8 @@ Draft Structure of App
 app/
  └─ java/.../recipeapp/
      ├─ data/
-     │   ├─ Recipe.kt              // ? Generating Type of Recipe
-     │   └─ FakeRecipes.kt        // ? Fulfilling more detail of each Recipe (50 Recipe)
+     │   ├─ Recipe.kt              // Diana Generating Type of Recipe
+     │   └─ FakeRecipes.kt        // Diana Fulfilling more detail of each Recipe (50 Recipe)
      ├─ vm/
      │   └─ RecipeViewModel.kt // Steve
      ├─ ui/
