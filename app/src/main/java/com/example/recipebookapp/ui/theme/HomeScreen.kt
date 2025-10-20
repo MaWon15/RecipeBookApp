@@ -21,16 +21,16 @@ fun HomeScreen(
     recipes: List<Recipe>,
     favoriteIds: Set<Int>,
     onRecipeClick: (Int) -> Unit,
-    onToggleFavourite: (Int) -> Unit,
-    onOpenFavourites: () -> Unit
+    onToggleFavorite: (Int) -> Unit,
+    onOpenFavorites: () -> Unit
 ) {
     Scaffold(
         topBar = {
             TopAppBar(
                 { Text("Recipes") },
                 actions = {
-                    IconButton(onClick = onOpenFavourites) {
-                        Icon(Icons.Default.List, contentDescription = "Open favourites")
+                    IconButton(onClick = onOpenFavorites) {
+                        Icon(Icons.Default.List, contentDescription = "Open favorites")
                     }
                 },
             )
@@ -40,8 +40,8 @@ fun HomeScreen(
             items(recipes, key = { it.id }) { recipe ->
                 RecipeRow(
                     recipe = recipe,
-                    isFavourite = recipe.id in favoriteIds,
-                    onToggleFavourite = { onToggleFavourite(recipe.id) },
+                    isFavorite = recipe.id in favoriteIds,
+                    onToggleFavorite = { onToggleFavorite(recipe.id) },
                     onClick = { onRecipeClick(recipe.id) }
                 )
                 Divider()
@@ -58,8 +58,8 @@ fun SmallTopAppBar(title: () -> Unit, actions: () -> Unit) {
 @Composable
 private fun RecipeRow(
     recipe: Recipe,
-    isFavourite: Boolean,
-    onToggleFavourite: () -> Unit,
+    isFavorite: Boolean,
+    onToggleFavorite: () -> Unit,
     onClick: () -> Unit
 ) {
     Row(
@@ -70,9 +70,9 @@ private fun RecipeRow(
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
         Text(recipe.title, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
-        IconButton(onClick = onToggleFavourite) {
+        IconButton(onClick = onToggleFavorite) {
             Icon(
-                if (isFavourite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
+                if (isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
                 contentDescription = "Toggle favourite"
             )
         }
