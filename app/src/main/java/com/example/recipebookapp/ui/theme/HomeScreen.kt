@@ -19,7 +19,7 @@ import com.example.recipebookapp.data.Recipe
 @Composable
 fun HomeScreen(
     recipes: List<Recipe>,
-    favouriteIds: Set<Int>,
+    favoriteIds: Set<Int>,
     onRecipeClick: (Int) -> Unit,
     onToggleFavourite: (Int) -> Unit,
     onOpenFavourites: () -> Unit
@@ -40,7 +40,7 @@ fun HomeScreen(
             items(recipes, key = { it.id }) { recipe ->
                 RecipeRow(
                     recipe = recipe,
-                    isFavourite = recipe.id in favouriteIds,
+                    isFavourite = recipe.id in favoriteIds,
                     onToggleFavourite = { onToggleFavourite(recipe.id) },
                     onClick = { onRecipeClick(recipe.id) }
                 )
