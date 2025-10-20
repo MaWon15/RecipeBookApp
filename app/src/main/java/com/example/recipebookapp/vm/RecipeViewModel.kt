@@ -17,7 +17,6 @@ class RecipeViewModel : ViewModel() {
         private set
 
     //ToggleFavorite List
-
     fun toggleFavorite(id: Int){
         favoriteIds = if (id in favoriteIds) favoriteIds - id else favoriteIds + id
     }

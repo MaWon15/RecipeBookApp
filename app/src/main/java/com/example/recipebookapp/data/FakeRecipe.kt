@@ -34,4 +34,6 @@ object FakeRecipe {
             )
         )
     )
+    //Sort By alphabet by name of Recipe
+        .sortedBy { it.title }
 }
