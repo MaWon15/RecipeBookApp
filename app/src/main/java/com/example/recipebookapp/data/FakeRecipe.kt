@@ -45,16 +45,45 @@ object FakeRecipe {
         ),
         Recipe(
             id = 5,
-            title = "",
-            ingredients = listOf(""),
+            title = "scrambled eggs",
+            ingredients = listOf("eggs, milk, butter, sea salt, pepper"),
             steps = listOf(
+                "beat the eggs, whisk until the yolk and whites are thoroughly combined",
+                "add the milk and whisk again, the eggs should be an even yellow color",
+                "preheat the pan over medium heat and melt a little butter inside it",
+                "out egg mixture and let it cook for a few seconds,undisturbed",
+                "continue folding and stirring eggs every few seconds",
+                "for a soft, creamy scramble, stop when eggs are mostly set but a liquid egg remains",
+                "season to taste with salt and pepper"
             )
         ),
         Recipe(
             id = 6,
-            title = "",
-            ingredients = listOf(""),
+            title = "chocolate chip cookies",
+            ingredients = listOf(
+                    "1 cup salted butter, " +
+                    "1 cup granulated sugar, " +
+                    "1 cup light brown sugar, " +
+                    "2 tsp pure vanilla extract, " +
+                    "2 large eggs, " +
+                    "3 cups all-purpose flour, " +
+                    "1 tsp baking soda, " +
+                    "1/2 tsp baking powder, " +
+                    "1 tsp sea salt, " +
+                    "2 cups chocolate chips"),
             steps = listOf(
+                "preheat over to 375 f and line 3 baking sheets with parchment paper set aside.",
+                "mix flour, baking soda, baking powder, and sea salt.",
+                "cream together butter and sugar until combined.",
+                "beat in eggs and vanilla until light (about 1 min)",
+                "Mix in the dry ingredients until combined.",
+                "Add chocolate chips and mix well.",
+                "Roll 2-3 Tablespoons (depending on how large you like your cookies) " +
+                        "of dough at a time into balls and place them evenly spaced on your " +
+                        "prepared cookie sheets.",
+                "Bake in preheated oven for approximately 8-10 minutes. Take them out when they " +
+                        "are just barely starting to turn brown.",
+                "Let them sit on the baking pan for 5 minutes before removing to cooling rack."
             )
         ),
         Recipe(
