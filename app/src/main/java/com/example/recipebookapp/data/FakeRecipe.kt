@@ -52,7 +52,13 @@ object FakeRecipe {
         Recipe(
             id = 4,
             title = "Stuffed Bell Peppers",
-            ingredients = listOf("4 bell peppers", "1 cup rice", "200g ground beef", "1 onion", "Tomato sauce"),
+            ingredients = listOf(
+                "4 bell peppers",
+                "1 cup rice",
+                "200g ground beef",
+                "1 onion",
+                "Tomato sauce"
+            ),
             steps = listOf(
                 "Cut the tops off bell peppers and remove seeds.",
                 "Cook rice and mix with cooked beef, onion, and tomato sauce.",
@@ -264,7 +270,13 @@ object FakeRecipe {
         Recipe(
             id = 12,
             title = "Classic Pancakes",
-            ingredients = listOf("1 cup flour", "2 tbsp sugar", "1 egg", "1 cup milk", "1 tsp baking powder"),
+            ingredients = listOf(
+                "1 cup flour",
+                "2 tbsp sugar",
+                "1 egg",
+                "1 cup milk",
+                "1 tsp baking powder"
+            ),
             steps = listOf(
                 "In a bowl, whisk together flour, sugar, and baking powder.",
                 "Add milk and egg, then mix until smooth.",
