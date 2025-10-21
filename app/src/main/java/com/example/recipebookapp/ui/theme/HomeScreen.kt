@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.recipebookapp.data.Recipe
+import androidx.compose.material3.HorizontalDivider
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -44,7 +45,7 @@ fun HomeScreen(
                     onToggleFavorite = { onToggleFavorite(recipe.id) },
                     onClick = { onRecipeClick(recipe.id) }
                 )
-                Divider()
+                HorizontalDivider()
             }
         }
     }
@@ -56,7 +57,7 @@ fun SmallTopAppBar(title: () -> Unit, actions: () -> Unit) {
 }
 
 @Composable
-private fun RecipeRow(
+fun RecipeRow(
     recipe: Recipe,
     isFavorite: Boolean,
     onToggleFavorite: () -> Unit,
