@@ -5,7 +5,13 @@ object FakeRecipe {
         Recipe(
             id = 1,
             title = "Spaghetti Aglio e Olio",
-            ingredients = listOf("200g spaghetti", "3 cloves garlic", "Olive oil", "Chili flakes", "Parsley", "Salt"),
+            ingredients = listOf(
+                "200g spaghetti",
+                "3 cloves garlic",
+                "Olive oil",
+                "Chili flakes",
+                "Parsley",
+                "Salt"),
             steps = listOf(
                 "Cook spaghetti in salted water.",
                 "Sauté sliced garlic in olive oil until fragrant.",
@@ -16,7 +22,12 @@ object FakeRecipe {
         Recipe(
             id = 2,
             title = "Avocado Toast Deluxe",
-            ingredients = listOf("2 slices sourdough", "1 avocado", "Lemon", "Salt", "Pepper", "Chili flakes"),
+            ingredients = listOf(
+                "2 slices sourdough",
+                "1 avocado",
+                "Lemon", "Salt",
+                "Pepper",
+                "Chili flakes"),
             steps = listOf(
                 "Toast bread.",
                 "Mash avocado with lemon, salt, and pepper.",
@@ -26,7 +37,12 @@ object FakeRecipe {
         Recipe(
             id = 3,
             title = "Blueberry Pancakes",
-            ingredients = listOf("1 cup flour", "1 tbsp sugar", "1 tsp baking powder", "1 egg", "3/4 cup milk", "Blueberries"),
+            ingredients = listOf(
+                "1 cup flour",
+                "1 tbsp sugar",
+                "1 tsp baking powder",
+                "1 egg", "3/4 cup milk",
+                "Blueberries"),
             steps = listOf(
                 "Whisk dry ingredients, then add egg and milk.",
                 "Fold in blueberries.",
@@ -36,7 +52,12 @@ object FakeRecipe {
         Recipe(
             id = 4,
             title = "Blueberry Pancakes",
-            ingredients = listOf("1 cup flour", "1 tbsp sugar", "1 tsp baking powder", "1 egg", "3/4 cup milk", "Blueberries"),
+            ingredients = listOf(
+                "1 cup flour",
+                "1 tbsp sugar",
+                "1 tsp baking powder",
+                "1 egg", "3/4 cup milk",
+                "Blueberries"),
             steps = listOf(
                 "Whisk dry ingredients, then add egg and milk.",
                 "Fold in blueberries.",
@@ -78,9 +99,9 @@ object FakeRecipe {
                 "beat in eggs and vanilla until light (about 1 min)",
                 "Mix in the dry ingredients until combined.",
                 "Add chocolate chips and mix well.",
-                "Roll 2-3 Tablespoons (depending on how large you like your cookies) " +
-                        "of dough at a time into balls and place them evenly spaced on your " +
-                        "prepared cookie sheets.",
+                """Roll 2-3 Tablespoons (depending on how large you like your cookies) 
+                        of dough at a time into balls and place them evenly spaced on your 
+                        prepared cookie sheets.""",
                 "Bake in preheated oven for approximately 8-10 minutes. Take them out when they " +
                         "are just barely starting to turn brown.",
                 "Let them sit on the baking pan for 5 minutes before removing to cooling rack."
@@ -89,7 +110,7 @@ object FakeRecipe {
         Recipe(
             id = 7,
             title = "red velvet cupcakes",
-            ingredients = listOf("" +
+            ingredients = listOf(
                 "1⅔ cups all-purpose flour 200g",
                 "2 teaspoons cocoa powder",
                 "1 cup granulated sugar 200g",
@@ -107,27 +128,27 @@ object FakeRecipe {
                 "Preheat the oven to 350°F",
                 "in a large bowl, sift the flour, sugar, cocoa powder baking powder, " +
                         "and baking soda together. Add the salt and give it a whisk to combine.",
-                "Cut the room temperature butter into tablespoon-sized pieces then add to the dry " +
-                        "ingredients. Using a paddle attachment, mix on low using until a sandy " +
-                        "mixture forms.",
-                "In another bowl, whisk together the eggs, buttermilk, vanilla, and food coloring. " +
-                        "(Use 1 to 2 tablespoons of liquid food coloring, or 5 to 6 drops of gel " +
-                        "food coloring. More will give a richer red.)",
+                """Cut the room temperature butter into tablespoon-sized pieces then add to the dry 
+                        ingredients. Using a paddle attachment, mix on low using until a sandy 
+                        mixture forms.""",
+                """In another bowl, whisk together the eggs, buttermilk, vanilla, and food coloring. 
+                        (Use 1 to 2 tablespoons of liquid food coloring, or 5 to 6 drops of gel 
+                        food coloring. More will give a richer red.)""",
                 "Slowly add the wet ingredients to the dry ingredients while mixing on low. Mix " +
                         "until combined, scraping the bowl down as needed. Distribute the batter " +
                         "evenly into cupcake papers.",
                 "Bake for 15 to 20 minutes or until springy to the touch. Let cool for a few " +
                         "minutes in the pans then remove and cool completely on a wire rack.",
                 "For the Cream Cheese Frosting:",
-                "In a large mixing bowl or the bowl of a stand mixer fitted with the paddle " +
-                        "attachment, cream the butter on medium speed until smooth and fluffy, " +
-                        "about 2 minutes.",
-                "Add the room temperature cream cheese, vanilla, and salt to the creamed butter. " +
-                        "Beat together on medium speed until well combined. Scrape down the bowl.",
-                "With the mixer on low speed, add the sifted confectioners sugar a cup at a time. " +
-                        "Mix until combined. If you’re wanting a stiffer buttercream, keep adding " +
-                        "more sifted confectioners sugar until it’s the desired texture or chill " +
-                        "the buttercream for a few minutes before piping.",
+                """In a large mixing bowl or the bowl of a stand mixer fitted with the paddle 
+                        attachment, cream the butter on medium speed until smooth and fluffy, 
+                        about 2 minutes.""",
+                """Add the room temperature cream cheese, vanilla, and salt to the creamed butter. 
+                        Beat together on medium speed until well combined. Scrape down the bowl.""",
+                """With the mixer on low speed, add the sifted confectioners sugar a cup at a time. 
+                        Mix until combined. If you’re wanting a stiffer buttercream, keep adding 
+                        more sifted confectioners sugar until it’s the desired texture or chill 
+                        the buttercream for a few minutes before piping.""",
                 "Transfer the buttercream to a piping bag fitted with a star tip and pipe large " +
                         "dollops on top of each cooled cupcake."
 
@@ -136,7 +157,7 @@ object FakeRecipe {
         Recipe(
             id = 8,
             title = "creamy mashed potatoes",
-            ingredients = listOf("" +
+            ingredients = listOf(
                 "4 pounds potatoes russet or Yukon gold",
                 "3 cloves garlic optional",
                 "⅓ cup melted salted butter",
@@ -157,7 +178,7 @@ object FakeRecipe {
         Recipe(
             id = 9,
             title = "gravy",
-            ingredients = listOf("" +
+            ingredients = listOf(
                 "▢ 1 chicken stock cube / bouillon cube",
                 "▢ 1 beef stock cube / bouillon cube",
                 "▢ 2 1/4 cups (565ml) boiling water",
@@ -180,16 +201,59 @@ object FakeRecipe {
         ),
         Recipe(
             id = 10,
-            title = "",
-            ingredients = listOf(""),
+            title = "Green bean casserole",
+            ingredients = listOf("" +
+                "2 (15-ounce) cans cut green beans, drained",
+                "1 (10.5-ounce) can condensed cream of mushroom soup",
+                "3/4 cup milk",
+                "1(2.8-ounce) can French fried onions",
+                "salt and ground black pepper to taste"
+            ),
             steps = listOf(
+                "Preheat the oven to 350 degrees F",
+                "Mix green beans, condensed cream of mushroom soup, milk, and 1/2 of the fried " +
+                        "onions in a 1.5-quart casserole dish",
+                "Bake in the preheated oven until heated through and bubbly, about 25 minutes.",
+                "Sprinkle remaining onions on top and return to the oven for 5 minutes. Season with " +
+                        "salt and pepper to taste. Let rest for a few minutes before serving."
             )
         ),
         Recipe(
             id = 11,
-            title = "",
-            ingredients = listOf(""),
+            title = "home made biscuits",
+            ingredients = listOf(
+                "2 cups all-purpose flour (250g)",
+                "1 Tablespoon baking powder",
+                "1 Tablespoon granulated sugar",
+                "1 teaspoon salt",
+                "6 Tablespoons unsalted butter very cold (85g), unsalted European butter is ideal, but not required",
+                "¾ cup whole milk¹ (177ml) buttermilk or 2% milk will also work",
+            ),
             steps = listOf(
+                """For best results, chill your butter in the freezer for 10-20 minutes before 
+                        beginning this recipe. It's ideal that the butter is very cold for light, 
+                        flaky, buttery biscuits.""",
+                """Preheat oven to 425F and line a cookie sheet with nonstick parchment paper. 
+                        Set aside.""",
+                """Combine flour, baking powder, sugar, and salt in a large bowl and mix well.
+                        Set aside.""",
+                """Remove your butter from the refrigerator and either cut it into your flour mixture 
+                        using a pastry cutter or (preferred) use a box grater to shred the butter 
+                        into small pieces and then add to the flour mixture and stir.""",
+                """Cut the butter or combine the grated butter until the mixture resembles coarse 
+                        crumbs.""",
+                """Add milk, use a wooden spoon or spatula to stir until combined (don't over-work 
+                        the dough).""",
+                """Transfer your biscuit dough to a well-floured surface and use your hands to gently 
+                        work the dough together. If the dough is too sticky, add flour until it is 
+                        manageable. """,
+                """Once the dough is cohesive, fold in half over itself and use your hands to gently 
+                        flatten layers together. Rotate the dough 90 degrees and fold in half 
+                        again, repeating this step 5-6 times but taking care to not overwork the 
+                        dough.""",
+                """Use your hands (do not use a rolling pin) to flatten the dough to 1" thick and " +
+                        lightly dust a 2 ¾" round biscuit cutter with flour. """,
+                "",
             )
         ),
         Recipe(
