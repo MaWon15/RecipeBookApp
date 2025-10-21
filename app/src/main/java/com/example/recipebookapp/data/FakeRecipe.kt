@@ -248,10 +248,19 @@ object FakeRecipe {
                         dough.""",
                 """Use your hands (do not use a rolling pin) to flatten the dough to 1" thick and " +
                         lightly dust a 2 ¾" round biscuit cutter with flour. """,
-                "",
+                """Making close cuts, press the biscuit cutter straight down into the dough and 
+                    |drop the biscuit onto your prepared baking sheet.""".trimMargin(),
+                """Repeat until you have gotten as many biscuits as possible and place less than 
+                    |½" apart on baking sheet. """.trimMargin(),
+                """Once you have gotten as many biscuits as possible out of the dough, gently 
+                    |re-work the dough to get out another biscuit or two until you have at least 
+                    |6 biscuits.""".trimMargin(),
+                """Bake on 425F for 12 minutes or until tops are beginning to just turn lightly 
+                    |golden brown.""".trimMargin(),
+                """If desired, brush with melted salted butter immediately after removing from oven. 
+                    |Serve warm and enjoy.""".trimMargin()
             )
         ),
-
         Recipe(
             id = 12,
             title = "Classic Pancakes",
