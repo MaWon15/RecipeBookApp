@@ -51,17 +51,12 @@ object FakeRecipe {
         ),
         Recipe(
             id = 4,
-            title = "Blueberry Pancakes",
-            ingredients = listOf(
-                "1 cup flour",
-                "1 tbsp sugar",
-                "1 tsp baking powder",
-                "1 egg", "3/4 cup milk",
-                "Blueberries"),
+            title = "Stuffed Bell Peppers",
+            ingredients = listOf("4 bell peppers", "1 cup rice", "200g ground beef", "1 onion", "Tomato sauce"),
             steps = listOf(
-                "Whisk dry ingredients, then add egg and milk.",
-                "Fold in blueberries.",
-                "Cook until bubbles form; flip and finish."
+                "Cut the tops off bell peppers and remove seeds.",
+                "Cook rice and mix with cooked beef, onion, and tomato sauce.",
+                "Stuff peppers with mixture and bake at 375°F for 25 minutes."
             )
         ),
         Recipe(
@@ -256,280 +251,566 @@ object FakeRecipe {
                 "",
             )
         ),
+
         Recipe(
             id = 12,
-            title = "",
-            ingredients = listOf(""),
+            title = "Classic Pancakes",
+            ingredients = listOf("1 cup flour", "2 tbsp sugar", "1 egg", "1 cup milk", "1 tsp baking powder"),
             steps = listOf(
+                "In a bowl, whisk together flour, sugar, and baking powder.",
+                "Add milk and egg, then mix until smooth.",
+                "Heat a lightly oiled skillet and pour ¼ cup batter for each pancake.",
+                "Cook until bubbles form, then flip and cook until golden."
             )
         ),
         Recipe(
             id = 13,
-            title = "",
-            ingredients = listOf(""),
+            title = "Spaghetti Bolognese",
+            ingredients = listOf(
+                "200g spaghetti",
+                "1 onion",
+                "2 cloves garlic",
+                "250g ground beef",
+                "1 cup tomato sauce"
+            ),
             steps = listOf(
+                "Cook spaghetti according to package instructions.",
+                "Sauté onion and garlic in olive oil until translucent.",
+                "Add beef and cook until browned.",
+                "Pour in tomato sauce and simmer for 15 minutes.",
+                "Serve over spaghetti with grated cheese."
             )
         ),
         Recipe(
             id = 14,
-            title = "",
-            ingredients = listOf(""),
+            title = "Vegetable Curry",
+            ingredients = listOf(
+                "1 onion",
+                "2 carrots",
+                "1 potato",
+                "1 cup coconut milk",
+                "2 tbsp curry paste"
+            ),
             steps = listOf(
+                "Sauté onion until translucent.",
+                "Add chopped vegetables and curry paste, cook for 5 minutes.",
+                "Pour in coconut milk and simmer until vegetables are tender."
             )
         ),
         Recipe(
             id = 15,
-            title = "",
-            ingredients = listOf(""),
+            title = "Chicken Stir-Fry",
+            ingredients = listOf(
+                "200g chicken breast",
+                "1 bell pepper",
+                "1 onion",
+                "2 tbsp soy sauce",
+                "1 tsp sesame oil"
+            ),
             steps = listOf(
+                "Slice chicken and vegetables into strips.",
+                "Stir-fry chicken until cooked through.",
+                "Add vegetables and cook for 3–5 minutes.",
+                "Pour in soy sauce and sesame oil, toss well, and serve."
             )
         ),
         Recipe(
             id = 16,
-            title = "",
-            ingredients = listOf(""),
+            title = "Chocolate Brownies",
+            ingredients = listOf(
+                "1/2 cup butter",
+                "1 cup sugar",
+                "2 eggs",
+                "1/3 cup cocoa powder",
+                "1/2 cup flour"
+            ),
             steps = listOf(
+                "Preheat oven to 350°F.",
+                "Melt butter, then stir in sugar, eggs, and cocoa.",
+                "Add flour and mix until smooth.",
+                "Pour into a pan and bake for 20–25 minutes."
             )
         ),
         Recipe(
             id = 17,
-            title = "",
-            ingredients = listOf(""),
+            title = "Caprese Salad",
+            ingredients = listOf(
+                "2 tomatoes",
+                "125g mozzarella",
+                "Fresh basil leaves",
+                "Olive oil",
+                "Salt",
+                "Pepper"
+            ),
             steps = listOf(
+                "Slice tomatoes and mozzarella.",
+                "Layer them alternately with basil leaves.",
+                "Drizzle with olive oil, season with salt and pepper."
             )
         ),
         Recipe(
             id = 18,
-            title = "",
-            ingredients = listOf(""),
+            title = "Garlic Butter Shrimp",
+            ingredients = listOf(
+                "250g shrimp",
+                "3 cloves garlic",
+                "2 tbsp butter",
+                "Lemon juice",
+                "Parsley"
+            ),
             steps = listOf(
+                "Melt butter in a skillet and add minced garlic.",
+                "Add shrimp and cook until pink.",
+                "Squeeze lemon juice and sprinkle with parsley before serving."
             )
         ),
         Recipe(
             id = 19,
-            title = "",
-            ingredients = listOf(""),
+            title = "Banana Smoothie",
+            ingredients = listOf(
+                "1 banana",
+                "1 cup milk",
+                "1 tbsp honey",
+                "Ice cubes"
+            ),
             steps = listOf(
+                "Add all ingredients to a blender.",
+                "Blend until smooth.",
+                "Serve chilled."
             )
         ),
         Recipe(
             id = 20,
-            title = "",
-            ingredients = listOf(""),
+            title = "Veggie Omelette",
+            ingredients = listOf(
+                "2 eggs",
+                "1/4 cup diced peppers",
+                "1/4 cup onions",
+                "Salt",
+                "Pepper"
+            ),
             steps = listOf(
+                "Beat eggs with salt and pepper.",
+                "Cook vegetables in a non-stick pan for 2 minutes.",
+                "Pour eggs over vegetables and cook until set.",
+                "Fold and serve warm."
             )
         ),
         Recipe(
             id = 21,
-            title = "",
-            ingredients = listOf(""),
+            title = "Grilled Cheese Sandwich",
+            ingredients = listOf(
+                "2 slices bread",
+                "Butter",
+                "2 slices cheese"
+            ),
             steps = listOf(
+                "Butter the bread slices.",
+                "Place cheese between slices.",
+                "Grill in a pan until golden brown on both sides."
             )
         ),
         Recipe(
             id = 22,
-            title = "",
-            ingredients = listOf(""),
+            title = "Tomato Soup",
+            ingredients = listOf(
+                "4 tomatoes",
+                "1 onion",
+                "2 cloves garlic",
+                "1 cup vegetable broth"
+            ),
             steps = listOf(
+                "Sauté onion and garlic until soft.",
+                "Add chopped tomatoes and broth.",
+                "Simmer for 15 minutes, then blend until smooth."
             )
         ),
         Recipe(
             id = 23,
-            title = "",
-            ingredients = listOf(""),
+            title = "Beef Tacos",
+            ingredients = listOf(
+                "6 taco shells",
+                "250g ground beef",
+                "1 tomato",
+                "Lettuce",
+                "Cheddar cheese"
+            ),
             steps = listOf(
+                "Cook ground beef with seasoning.",
+                "Fill taco shells with beef, tomato, lettuce, and cheese."
             )
         ),
         Recipe(
             id = 24,
-            title = "",
-            ingredients = listOf(""),
+            title = "Fruit Salad",
+            ingredients = listOf(
+                "Apple",
+                "Banana",
+                "Grapes",
+                "Strawberries",
+                "Honey"
+            ),
             steps = listOf(
+                "Chop all fruits and place in a bowl.",
+                "Drizzle with honey and mix well."
             )
         ),
         Recipe(
             id = 25,
-            title = "",
-            ingredients = listOf(""),
+            title = "Garlic Bread",
+            ingredients = listOf(
+                "1 baguette",
+                "3 cloves garlic",
+                "2 tbsp butter",
+                "Parsley"
+            ),
             steps = listOf(
+                "Mix butter, minced garlic, and parsley.",
+                "Spread on baguette slices and bake until golden."
             )
         ),
         Recipe(
             id = 26,
-            title = "",
-            ingredients = listOf(""),
+            title = "Fried Rice",
+            ingredients = listOf(
+                "1 cup cooked rice",
+                "1 egg", "1 carrot",
+                "2 tbsp soy sauce"
+            ),
             steps = listOf(
+                "Scramble the egg and set aside.",
+                "Stir-fry vegetables, then add rice and soy sauce.",
+                "Mix in scrambled egg before serving."
             )
         ),
         Recipe(
             id = 27,
-            title = "",
-            ingredients = listOf(""),
+            title = "Garlic Roasted Potatoes",
+            ingredients = listOf(
+                "4 potatoes",
+                "2 tbsp olive oil",
+                "3 cloves garlic",
+                "Salt",
+                "Pepper",
+                "Rosemary"
+            ),
             steps = listOf(
+                "Preheat oven to 400°F.",
+                "Cut potatoes into cubes and toss with oil, garlic, salt, pepper, and rosemary.",
+                "Spread on a baking sheet and roast for 30 minutes, flipping halfway."
             )
         ),
         Recipe(
             id = 28,
-            title = "",
-            ingredients = listOf(""),
+            title = "Lemonade",
+            ingredients = listOf(
+                "2 lemons",
+                "3 cups water",
+                "2 tbsp sugar"
+            ),
             steps = listOf(
+                "Juice lemons into a pitcher.",
+                "Add water and sugar, stir well."
             )
         ),
         Recipe(
             id = 29,
-            title = "",
-            ingredients = listOf(""),
+            title = "French Toast",
+            ingredients = listOf(
+                "2 eggs",
+                "1/2 cup milk",
+                "2 slices bread",
+                "Cinnamon"
+            ),
             steps = listOf(
+                "Mix eggs, milk, and cinnamon.",
+                "Dip bread into mixture and cook on a skillet until golden."
             )
         ),
         Recipe(
             id = 30,
-            title = "",
-            ingredients = listOf(""),
+            title = "Chicken Soup",
+            ingredients = listOf(
+                "200g chicken",
+                "1 carrot",
+                "1 onion",
+                "4 cups broth"
+            ),
             steps = listOf(
+                "Cook chicken in broth until tender.",
+                "Add vegetables and simmer for 20 minutes."
             )
         ),
         Recipe(
             id = 31,
-            title = "",
-            ingredients = listOf(""),
+            title = "Greek Salad",
+            ingredients = listOf(
+                "Cucumber",
+                "Tomatoes",
+                "Feta cheese",
+                "Olives",
+                "Olive oil"
+            ),
             steps = listOf(
+                "Chop vegetables and combine in a bowl.",
+                "Add feta and drizzle with olive oil."
             )
         ),
         Recipe(
             id = 32,
-            title = "",
-            ingredients = listOf(""),
+            title = "Blueberry Muffins",
+            ingredients = listOf(
+                "2 cups flour",
+                "1 cup sugar",
+                "1 cup blueberries",
+                "1 egg", "1/2 cup milk"
+            ),
             steps = listOf(
+                "Preheat oven to 375°F.",
+                "Mix dry ingredients, add wet ingredients, then fold in blueberries.",
+                "Bake for 20 minutes."
             )
         ),
         Recipe(
             id = 33,
-            title = "",
-            ingredients = listOf(""),
+            title = "Caesar Salad",
+            ingredients = listOf(
+                "Lettuce",
+                "Croutons",
+                "Parmesan cheese",
+                "Caesar dressing"
+            ),
             steps = listOf(
+                "Toss lettuce with dressing, top with croutons and cheese."
             )
         ),
         Recipe(
             id = 34,
-            title = "",
-            ingredients = listOf(""),
+            title = "Omelette Sandwich",
+            ingredients = listOf(
+                "2 slices bread",
+                "2 eggs",
+                "Salt",
+                "Pepper",
+                "Butter"),
             steps = listOf(
+                "Make an omelette and place it between buttered toast slices."
             )
         ),
         Recipe(
             id = 35,
-            title = "",
-            ingredients = listOf(""),
+            title = "Mango Smoothie",
+            ingredients = listOf(
+                "1 mango",
+                "1 cup yogurt",
+                "1 tbsp honey",
+                "Ice cubes"
+            ),
             steps = listOf(
+                "Blend all ingredients until smooth and creamy."
             )
         ),
         Recipe(
             id = 36,
-            title = "",
-            ingredients = listOf(""),
+            title = "Garlic Pasta",
+            ingredients = listOf(
+                "200g pasta",
+                "3 cloves garlic",
+                "2 tbsp butter",
+                "Parmesan"
+            ),
             steps = listOf(
+                "Boil pasta and drain.",
+                "Sauté garlic in butter, add pasta, and toss with Parmesan."
             )
         ),
         Recipe(
             id = 37,
-            title = "",
-            ingredients = listOf(""),
+            title = "Cucumber Sandwich",
+            ingredients = listOf(
+                "2 slices bread",
+                "1/2 cucumber",
+                "Cream cheese"
+            ),
             steps = listOf(
+                "Spread cream cheese on bread, layer cucumber slices, and close sandwich."
             )
         ),
         Recipe(
             id = 38,
-            title = "",
-            ingredients = listOf(""),
+            title = "Chocolate Milkshake",
+            ingredients = listOf(
+                "1 cup milk",
+                "2 tbsp cocoa powder",
+                "1 scoop ice cream"
+            ),
             steps = listOf(
+                "Blend all ingredients until frothy and smooth."
             )
         ),
         Recipe(
             id = 39,
-            title = "",
-            ingredients = listOf(""),
+            title = "Honey Glazed Carrots",
+            ingredients = listOf(
+                "3 carrots",
+                "1 tbsp butter",
+                "1 tbsp honey"
+            ),
             steps = listOf(
+                "Cook carrots until tender, then toss with melted butter and honey."
             )
         ),
         Recipe(
             id = 40,
-            title = "",
-            ingredients = listOf(""),
+            title = "Grilled Chicken",
+            ingredients = listOf(
+                "1 chicken breast",
+                "Olive oil",
+                "Garlic",
+                "Lemon juice",
+                "Salt",
+                "Pepper"
+            ),
             steps = listOf(
+                "Marinate chicken with ingredients for 30 minutes.",
+                "Grill for 6–8 minutes per side until cooked through."
             )
         ),
         Recipe(
             id = 41,
-            title = "",
-            ingredients = listOf(""),
+            title = "Berry Parfait",
+            ingredients = listOf(
+                "Yogurt",
+                "Granola",
+                "Mixed berries",
+                "Honey"
+            ),
             steps = listOf(
+                "Layer yogurt, berries, and granola in a glass.",
+                "Drizzle honey on top before serving."
             )
         ),
         Recipe(
             id = 42,
-            title = "",
-            ingredients = listOf(""),
+            title = "Avocado Smoothie",
+            ingredients = listOf(
+                "1 avocado",
+                "1 cup milk",
+                "1 tbsp honey",
+                "Ice cubes"
+            ),
             steps = listOf(
+                "Blend all ingredients until smooth and creamy."
             )
         ),
         Recipe(
             id = 43,
-            title = "",
-            ingredients = listOf(""),
+            title = "Peanut Butter Cookies",
+            ingredients = listOf(
+                "1 cup peanut butter",
+                "1 cup sugar",
+                "1 egg"),
             steps = listOf(
+                "Mix all ingredients together.",
+                "Scoop onto a baking tray and bake at 350°F for 10 minutes."
             )
         ),
         Recipe(
             id = 44,
-            title = "",
-            ingredients = listOf(""),
+            title = "Tuna Sandwich",
+            ingredients = listOf(
+                "Bread",
+                "Tuna",
+                "Mayonnaise",
+                "Lettuce"
+            ),
             steps = listOf(
+                "Mix tuna with mayo and spread on bread with lettuce."
             )
         ),
         Recipe(
             id = 45,
-            title = "",
-            ingredients = listOf(""),
+            title = "Apple Pie",
+            ingredients = listOf(
+                "2 apples",
+                "Pie crust",
+                "Sugar",
+                "Cinnamon"
+            ),
             steps = listOf(
+                "Slice apples and toss with sugar and cinnamon.",
+                "Fill crust and bake at 375°F for 40 minutes."
             )
         ),
         Recipe(
             id = 46,
-            title = "",
-            ingredients = listOf(""),
+            title = "Vanilla Cupcakes",
+            ingredients = listOf(
+                "1 cup flour",
+                "1/2 cup sugar",
+                "1/2 cup butter",
+                "1 egg",
+                "1 tsp vanilla"
+            ),
             steps = listOf(
+                "Preheat oven to 350°F.",
+                "Mix ingredients and bake for 18 minutes."
             )
         ),
         Recipe(
             id = 47,
-            title = "",
-            ingredients = listOf(""),
+            title = "Tomato Bruschetta",
+            ingredients = listOf(
+                "Bread",
+                "Tomatoes",
+                "Garlic",
+                "Basil",
+                "Olive oil"
+            ),
             steps = listOf(
+                "Toast bread and top with diced tomatoes, garlic, basil, and olive oil."
             )
         ),
         Recipe(
             id = 48,
-            title = "",
-            ingredients = listOf(""),
+            title = "Cinnamon Oatmeal",
+            ingredients = listOf(
+                "1 cup oats",
+                "2 cups milk",
+                "1 tsp cinnamon",
+                "Honey"),
             steps = listOf(
+                "Cook oats in milk until thickened.",
+                "Stir in cinnamon and drizzle with honey."
             )
         ),
         Recipe(
             id = 49,
-            title = "",
-            ingredients = listOf(""),
+            title = "Lentil Soup",
+            ingredients = listOf(
+                "1 cup lentils",
+                "1 onion",
+                "2 carrots",
+                "4 cups broth"
+            ),
             steps = listOf(
+                "Sauté onion and carrots, then add lentils and broth.",
+                "Simmer for 25 minutes until soft."
             )
         ),
         Recipe(
             id = 50,
-            title = "",
-            ingredients = listOf(""),
+            title = "Peach Smoothie",
+            ingredients = listOf(
+                "1 peach",
+                "1 banana",
+                "1 cup milk",
+                "Ice cubes"
+            ),
             steps = listOf(
+                "Blend all ingredients until smooth."
             )
         ),
-
     )
     //Sort By alphabet by name of Recipe
         .sortedBy { it.title }
