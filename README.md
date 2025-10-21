@@ -1,6 +1,6 @@
 ============================================= MEMBERS INFORMATION ===================================================================
-Steve Dang <stevedang0105@csu.fullerton.edu> <CWID:875448235>
-Diana Maldonado <di.maldonado5504@csu.fullerton.edu> <CWID:839805504>
+Steve Dang      <stevedang0105@csu.fullerton.edu>     <CWID:875448235>
+Diana Maldonado <di.maldonado5504@csu.fullerton.edu>  <CWID:839805504>
      
 ================================================= MEMBERS' ROLES ===================================================================
 app/

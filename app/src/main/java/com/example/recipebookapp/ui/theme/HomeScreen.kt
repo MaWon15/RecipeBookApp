@@ -74,7 +74,7 @@ fun RecipeRow(
         IconButton(onClick = onToggleFavorite) {
             Icon(
                 if (isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
-                contentDescription = "Toggle favourite"
+                contentDescription = "Toggle favorite"
             )
         }
     }
