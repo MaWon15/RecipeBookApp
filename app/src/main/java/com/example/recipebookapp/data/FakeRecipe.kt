@@ -61,15 +61,15 @@ object FakeRecipe {
             id = 6,
             title = "chocolate chip cookies",
             ingredients = listOf(
-                    "1 cup salted butter, " +
-                    "1 cup granulated sugar, " +
-                    "1 cup light brown sugar, " +
-                    "2 tsp pure vanilla extract, " +
-                    "2 large eggs, " +
-                    "3 cups all-purpose flour, " +
-                    "1 tsp baking soda, " +
-                    "1/2 tsp baking powder, " +
-                    "1 tsp sea salt, " +
+                    "1 cup salted butter, ",
+                    "1 cup granulated sugar, ",
+                    "1 cup light brown sugar, ",
+                    "2 tsp pure vanilla extract, ",
+                    "2 large eggs, ",
+                    "3 cups all-purpose flour, ",
+                    "1 tsp baking soda, ",
+                    "1/2 tsp baking powder, ",
+                    "1 tsp sea salt, ",
                     "2 cups chocolate chips"),
             steps = listOf(
                 "preheat over to 375 f and line 3 baking sheets with parchment paper set aside.",
@@ -88,23 +88,94 @@ object FakeRecipe {
         ),
         Recipe(
             id = 7,
-            title = "",
-            ingredients = listOf(""),
+            title = "red velvet cupcakes",
+            ingredients = listOf("" +
+                "1⅔ cups all-purpose flour 200g",
+                "2 teaspoons cocoa powder",
+                "1 cup granulated sugar 200g",
+                "1 teaspoon baking powder",
+                "¼ teaspoon baking soda",
+                "¼ teaspoon kosher salt",
+                "¾ cup unsalted butter room temperature (170g)",
+                "3 large eggs room temperature",
+                "2 tablespoons vanilla extract",
+                "¾ cup buttermilk 180ml",
+                "Red food coloring"
+                ),
             steps = listOf(
+                "For the Cupcakes:",
+                "Preheat the oven to 350°F",
+                "in a large bowl, sift the flour, sugar, cocoa powder baking powder, " +
+                        "and baking soda together. Add the salt and give it a whisk to combine.",
+                "Cut the room temperature butter into tablespoon-sized pieces then add to the dry " +
+                        "ingredients. Using a paddle attachment, mix on low using until a sandy " +
+                        "mixture forms.",
+                "In another bowl, whisk together the eggs, buttermilk, vanilla, and food coloring. " +
+                        "(Use 1 to 2 tablespoons of liquid food coloring, or 5 to 6 drops of gel " +
+                        "food coloring. More will give a richer red.)",
+                "Slowly add the wet ingredients to the dry ingredients while mixing on low. Mix " +
+                        "until combined, scraping the bowl down as needed. Distribute the batter " +
+                        "evenly into cupcake papers.",
+                "Bake for 15 to 20 minutes or until springy to the touch. Let cool for a few " +
+                        "minutes in the pans then remove and cool completely on a wire rack.",
+                "For the Cream Cheese Frosting:",
+                "In a large mixing bowl or the bowl of a stand mixer fitted with the paddle " +
+                        "attachment, cream the butter on medium speed until smooth and fluffy, " +
+                        "about 2 minutes.",
+                "Add the room temperature cream cheese, vanilla, and salt to the creamed butter. " +
+                        "Beat together on medium speed until well combined. Scrape down the bowl.",
+                "With the mixer on low speed, add the sifted confectioners sugar a cup at a time. " +
+                        "Mix until combined. If you’re wanting a stiffer buttercream, keep adding " +
+                        "more sifted confectioners sugar until it’s the desired texture or chill " +
+                        "the buttercream for a few minutes before piping.",
+                "Transfer the buttercream to a piping bag fitted with a star tip and pipe large " +
+                        "dollops on top of each cooled cupcake."
+
             )
         ),
         Recipe(
             id = 8,
-            title = "",
-            ingredients = listOf(""),
+            title = "creamy mashed potatoes",
+            ingredients = listOf("" +
+                "4 pounds potatoes russet or Yukon gold",
+                "3 cloves garlic optional",
+                "⅓ cup melted salted butter",
+                "1 cup milk or cream",
+                "salt to taste",
+                "black pepper to taste"
+                ),
             steps = listOf(
+                "Peel and quarter potatoes, place in a pot of cold salted water.",
+                "Add cloves of garlic (if using) & bring to a boil, cook uncovered 15 minutes or " +
+                        "until fork-tender. Drain well.",
+                "Heat milk on the stove top (or in the microwave) until warm.",
+                "Add butter to the potatoes and begin mashing. Pour in heated milk a little at a " +
+                        "time while using a potato masher to reach desired consistency.",
+                "Season with salt and pepper. Serve hot."
             )
         ),
         Recipe(
             id = 9,
-            title = "",
-            ingredients = listOf(""),
+            title = "gravy",
+            ingredients = listOf("" +
+                "▢ 1 chicken stock cube / bouillon cube",
+                "▢ 1 beef stock cube / bouillon cube",
+                "▢ 2 1/4 cups (565ml) boiling water",
+                "▢ 60g/ 4 tbsp butter , unsalted",
+                "▢ 4 tbsp flour , plain / all purpose",
+                "▢ 1/2 tsp onion powder (ok to omit or sub garlic powder)",
+                "▢ 1/4 tsp finely ground black pepper",
+                "▢ Salt "
+            ),
             steps = listOf(
+                "Crumble cubes into boiling water, mix to dissolve.",
+                "Melt butter in a saucepan over medium heat.",
+                "Add flour, onion powder and pepper. Mix into butter with a wooden spoon or whisk.",
+                "While stirring, slowly pour in half the liquid. Once incorporated into the flour " +
+                        "butter roux (it will thicken quickly), add remaining liquid and mix.",
+                "Stir for 1.5 – 2 minutes until it thickens to a gravy consistency (it's quick as " +
+                        "water is already hot). Taste, add more salt and pepper if needed.",
+                "Serve over chops, steak, sausages, veggies, roast chicken, pork, beef, lamb."
             )
         ),
         Recipe(
