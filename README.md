@@ -1,12 +1,14 @@
 ============================================= MEMBERS INFORMATION ===================================================================
 Name:
      Steve Dang
+     Diana Maldonado <CWID:839805504>   Email:<di.maldonado5504@csu.fullerton.edu>
      
 Email:
      stevedang0105@csu.fullerton.edu
      
 CWID:
      875448235
+     
 
 ================================================= MEMBERS' ROLES ===================================================================
 app/
