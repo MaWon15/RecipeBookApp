@@ -14,4 +14,4 @@ app/
      │   ├─ HomeScreen.kt         // Diana 
      │   ├─ FavoritesScreen.kt    // ihuegi
      │   └─ DetailsScreen.kt      // ?
-     └─ MainActivity.kt           // ? (NavHost)
+     └─ MainActivity.kt           // Steve
