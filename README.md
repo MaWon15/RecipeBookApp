@@ -4,6 +4,7 @@ Diana Maldonado <di.maldonado5504@csu.fullerton.edu>  <CWID:839805504>
 Steven Price
 <sprice2003@csu.fullerton.edu>
   <CWID:814601324>
+Gustavo Necochea <gnecoche@csu.fullerton.edu> <CWID:865676605>
      
 **MEMBERS' ROLES**
 app/
