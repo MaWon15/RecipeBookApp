@@ -14,7 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.lifecycle.viewmodel.compose.viewModel
 
 import com.example.recipebookapp.ui.theme.FavoritesScreen
-//import com.example.recipebookapp.ui.theme.DetailScreen
+import com.example.recipebookapp.ui.theme.DetailScreen
 import com.example.recipebookapp.ui.theme.HomeScreen
 import com.example.recipebookapp.ui.theme.RecipeBookAppTheme
 import com.example.recipebookapp.vm.RecipeViewModel
@@ -78,7 +78,7 @@ private fun TopTabsApp() {
                 HomeScreen(
                     recipes = vm.recipes,
                     favoriteIds = vm.favoriteIds,
-                    onRecipeClick = { id -> navController.navigate("details/$id") },
+                    onRecipeClick = { id -> navController.navigate("details/$id")},
                     onToggleFavorite = { id -> vm.toggleFavorite(id) },
                     onOpenFavorites = {
                         selectedTab = 1
@@ -104,14 +104,14 @@ private fun TopTabsApp() {
 
             }
 
-            //composable("details/{id}") { backStackEntry ->
-            //    val id = backStackEntry.arguments?.getString("id")?.toIntOrNull() ?: -1
-            //    DetailScreen(
-            //        vm = vm,
-            //        id = id,
-            //        onBack = { navController.popBackStack() }
-            //    )
-            //}
+            composable("details/{id}") { backStackEntry ->
+                val id = backStackEntry.arguments?.getString("id")?.toIntOrNull() ?: -1
+                DetailScreen(
+                    vm = vm,
+                    id = id,
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }

@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.List
@@ -33,7 +34,7 @@ fun HomeScreen(
                 { Text("Recipes") },
                 actions = {
                     IconButton(onClick = onOpenFavorites) {
-                        Icon(Icons.Default.List, contentDescription = "Open favorites")
+                        Icon(Icons.AutoMirrored.Filled.List, contentDescription = "Open favorites")
                     }
                 },
             )
