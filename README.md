@@ -23,7 +23,7 @@ Recording Vid: Gustavo
 - With flexible interface, and esay using, our application promise will bringing convenience to users.
 
 **SCREENSHOTS**
-![HomeScreen](HomeScreen.png)
-![Favorite](FavoriteScreen.png)
-![Home/DetailScreen](Home_RecipeDetailScreen.png)
-![Favorite/DetailScreen](Favorite_RecipeDetailScreen.png)
+![HomeScreen](ScreenShots/HomeScreen.png)
+![Favorite](ScreenShots/FavoriteScreen.png)
+![Home/DetailScreen](ScreenShots/Home_RecipeDetailScreen.png)
+![Favorite/DetailScreen](ScreenShots/Favorite_RecipeDetailScreen.png)
