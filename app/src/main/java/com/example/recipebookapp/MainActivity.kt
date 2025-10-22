@@ -4,7 +4,11 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBars
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -46,25 +50,31 @@ private fun TopTabsApp() {
     var selectedTab by remember { mutableIntStateOf(0) }
     val tabs = listOf("Home", "Fav")
 
+    val systemBarsPadding = WindowInsets.systemBars.asPaddingValues()
+
     Scaffold(
         topBar = {
-            TabRow(selectedTabIndex = selectedTab) {
-                tabs.forEachIndexed { index, label ->
-                    Tab(
-                        selected = selectedTab == index,
-                        onClick = {
-                            selectedTab = index
-                            when (index) {
-                                0 -> navController.navigate("home") {
-                                    popUpTo("home") { inclusive = true }
+            Column(
+                modifier = Modifier.padding(top = systemBarsPadding.calculateTopPadding()) // Adds top padding dynamically
+            ) {
+                TabRow(selectedTabIndex = selectedTab) {
+                    tabs.forEachIndexed { index, label ->
+                        Tab(
+                            selected = selectedTab == index,
+                            onClick = {
+                                selectedTab = index
+                                when (index) {
+                                    0 -> navController.navigate("home") {
+                                        popUpTo("home") { inclusive = true }
+                                    }
+                                    1 -> navController.navigate("favorites") {
+                                        popUpTo("favorites") { inclusive = true }
+                                    }
                                 }
-                                1 -> navController.navigate("favorites") {
-                                    popUpTo("favorites") { inclusive = true }
-                                }
-                            }
-                        },
-                        text = { Text(label) }
-                    )
+                            },
+                            text = { Text(label) }
+                        )
+                    }
                 }
             }
         }
@@ -78,14 +88,9 @@ private fun TopTabsApp() {
                 HomeScreen(
                     recipes = vm.recipes,
                     favoriteIds = vm.favoriteIds,
-                    onRecipeClick = { id -> navController.navigate("details/$id")},
+                    onRecipeClick = { id -> navController.navigate("details/$id") },
                     onToggleFavorite = { id -> vm.toggleFavorite(id) },
-                    onOpenFavorites = {
-                        selectedTab = 1
-                        navController.navigate(TopTab.FAV.route) {
-                            popUpTo(TopTab.FAV.route) { inclusive = true }
-                        }
-                    },
+                    onOpenFavorites = { selectedTab = 1; navController.navigate(TopTab.FAV.route) },
                     vm = vm
                 )
             }
@@ -97,11 +102,10 @@ private fun TopTabsApp() {
                 FavoritesScreen(
                     favoriteRecipes = favRecipes,
                     favoriteIds = vm.favoriteIds,
-                    onToggleFavorite = {id -> vm.toggleFavorite(id)},
-                    onRecipeClick = { id -> navController.navigate("details/$id")},
+                    onToggleFavorite = { id -> vm.toggleFavorite(id) },
+                    onRecipeClick = { id -> navController.navigate("details/$id") },
                     vm = vm
                 )
-
             }
 
             composable("details/{id}") { backStackEntry ->
@@ -115,6 +119,7 @@ private fun TopTabsApp() {
         }
     }
 }
+
 
 
 
