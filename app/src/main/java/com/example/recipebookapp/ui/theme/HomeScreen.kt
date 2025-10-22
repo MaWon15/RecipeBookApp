@@ -1,5 +1,6 @@
 package com.example.recipebookapp.ui.theme
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.padding
@@ -9,13 +10,14 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
-import androidx.compose.material.icons.filled.List
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.recipebookapp.data.Recipe
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
 import com.example.recipebookapp.vm.RecipeViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -55,30 +57,60 @@ fun HomeScreen(
 }
 
 @Composable
-fun SmallTopAppBar(title: () -> Unit, actions: () -> Unit) {
-    TODO("Not yet implemented")
-}
-
-@Composable
 fun RecipeRow(
     recipe: Recipe,
     isFavorite: Boolean,
     onToggleFavorite: () -> Unit,
     onClick: () -> Unit
 ) {
-    Row(
-        Modifier
+    val rowColor = when (recipe.difficulty) {
+        1 -> DifficultyEasy
+        2 -> DifficultyMedium
+        3 -> DifficultyHard
+        else -> MaterialTheme.colorScheme.surface
+    }
+
+    Box(
+        modifier = Modifier
             .fillMaxWidth()
             .clickable(onClick = onClick)
-            .padding(16.dp),
-        horizontalArrangement = Arrangement.SpaceBetween
+            .background(rowColor)
+            .padding(horizontal = 16.dp, vertical = 12.dp)
     ) {
-        Text(recipe.title, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
-        IconButton(onClick = onToggleFavorite) {
-            Icon(
-                if (isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
-                contentDescription = "Toggle favorite"
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text(
+                text = "${recipe.country} ${recipe.title}",
+                style = MaterialTheme.typography.titleMedium,
+                color = Color.Black,
+                modifier = Modifier.weight(1f)
             )
+
+            IconButton(onClick = onToggleFavorite) {
+                Box {
+                    if (isFavorite) {
+                        Icon(
+                            imageVector = Icons.Default.Favorite,
+                            contentDescription = null,
+                            tint = Color.Red
+                        )
+                        Icon(
+                            imageVector = Icons.Default.FavoriteBorder,
+                            contentDescription = null,
+                            tint = Color.Black
+                        )
+                    } else {
+                        Icon(
+                            imageVector = Icons.Default.FavoriteBorder,
+                            contentDescription = null,
+                            tint = Color.Black
+                        )
+                    }
+                }
+            }
         }
     }
 }

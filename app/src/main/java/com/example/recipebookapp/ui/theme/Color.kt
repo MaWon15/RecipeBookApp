@@ -2,6 +2,10 @@ package com.example.recipebookapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+val DifficultyEasy = Color(0xFFA8E6A3)
+val DifficultyMedium = Color(0xFFFFE59D)
+val DifficultyHard = Color(0xFFF5A3A3)
+
 val Purple80 = Color(0xFFD0BCFF)
 val PurpleGrey80 = Color(0xFFCCC2DC)
 val Pink80 = Color(0xFFEFB8C8)

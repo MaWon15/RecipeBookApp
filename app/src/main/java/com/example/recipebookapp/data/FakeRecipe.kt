@@ -11,13 +11,16 @@ object FakeRecipe {
                 "Olive oil",
                 "Chili flakes",
                 "Parsley",
-                "Salt"),
+                "Salt"
+            ),
             steps = listOf(
                 "Cook spaghetti in salted water.",
                 "Sauté sliced garlic in olive oil until fragrant.",
                 "Add chili flakes; toss pasta with a splash of pasta water.",
                 "Finish with chopped parsley and serve."
-            )
+            ),
+            difficulty = 2,
+            country = "🇮🇹"
         ),
         Recipe(
             id = 2,
@@ -25,14 +28,18 @@ object FakeRecipe {
             ingredients = listOf(
                 "2 slices sourdough",
                 "1 avocado",
-                "Lemon", "Salt",
+                "Lemon",
+                "Salt",
                 "Pepper",
-                "Chili flakes"),
+                "Chili flakes"
+            ),
             steps = listOf(
                 "Toast bread.",
                 "Mash avocado with lemon, salt, and pepper.",
                 "Spread and top with chili flakes."
-            )
+            ),
+            difficulty = 1,
+            country = "🇺🇸"
         ),
         Recipe(
             id = 3,
@@ -41,798 +48,930 @@ object FakeRecipe {
                 "1 cup flour",
                 "1 tbsp sugar",
                 "1 tsp baking powder",
-                "1 egg", "3/4 cup milk",
-                "Blueberries"),
+                "1 egg",
+                "3/4 cup milk",
+                "Blueberries"
+            ),
             steps = listOf(
                 "Whisk dry ingredients, then add egg and milk.",
                 "Fold in blueberries.",
                 "Cook until bubbles form; flip and finish."
-            )
+            ),
+            difficulty = 1,
+            country = "🇺🇸"
         ),
         Recipe(
             id = 4,
-            title = "Stuffed Bell Peppers",
+            title = "Sushi Rolls",
             ingredients = listOf(
-                "4 bell peppers",
-                "1 cup rice",
-                "200g ground beef",
-                "1 onion",
-                "Tomato sauce"
+                "2 cups sushi rice",
+                "Nori sheets",
+                "Rice vinegar",
+                "Cucumber",
+                "Avocado",
+                "Raw salmon"
             ),
             steps = listOf(
-                "Cut the tops off bell peppers and remove seeds.",
-                "Cook rice and mix with cooked beef, onion, and tomato sauce.",
-                "Stuff peppers with mixture and bake at 375°F for 25 minutes."
-            )
+                "Prepare sushi rice with rice vinegar.",
+                "Lay nori sheet on mat and spread rice evenly.",
+                "Add fillings and roll tightly.",
+                "Slice and serve with soy sauce."
+            ),
+            difficulty = 3,
+            country = "🇯🇵"
         ),
         Recipe(
             id = 5,
-            title = "scrambled eggs",
-            ingredients = listOf("eggs, milk, butter, sea salt, pepper"),
+            title = "Tacos al Pastor",
+            ingredients = listOf(
+                "500g pork shoulder",
+                "Pineapple",
+                "Onion",
+                "Corn tortillas",
+                "Achiote paste",
+                "Lime",
+                "Cilantro"
+            ),
             steps = listOf(
-                "beat the eggs, whisk until the yolk and whites are thoroughly combined",
-                "add the milk and whisk again, the eggs should be an even yellow color",
-                "preheat the pan over medium heat and melt a little butter inside it",
-                "out egg mixture and let it cook for a few seconds,undisturbed",
-                "continue folding and stirring eggs every few seconds",
-                "for a soft, creamy scramble, stop when eggs are mostly set but a liquid egg remains",
-                "season to taste with salt and pepper"
-            )
+                "Marinate pork with achiote and pineapple juice.",
+                "Grill until caramelized.",
+                "Serve on tortillas with onion, cilantro, and lime."
+            ),
+            difficulty = 3,
+            country = "🇲🇽"
         ),
         Recipe(
             id = 6,
-            title = "chocolate chip cookies",
+            title = "Chicken Curry",
             ingredients = listOf(
-                    "1 cup salted butter, ",
-                    "1 cup granulated sugar, ",
-                    "1 cup light brown sugar, ",
-                    "2 tsp pure vanilla extract, ",
-                    "2 large eggs, ",
-                    "3 cups all-purpose flour, ",
-                    "1 tsp baking soda, ",
-                    "1/2 tsp baking powder, ",
-                    "1 tsp sea salt, ",
-                    "2 cups chocolate chips"),
+                "500g chicken",
+                "Onion",
+                "Garlic",
+                "Ginger",
+                "Curry powder",
+                "Coconut milk",
+                "Tomatoes"
+            ),
             steps = listOf(
-                "preheat over to 375 f and line 3 baking sheets with parchment paper set aside.",
-                "mix flour, baking soda, baking powder, and sea salt.",
-                "cream together butter and sugar until combined.",
-                "beat in eggs and vanilla until light (about 1 min)",
-                "Mix in the dry ingredients until combined.",
-                "Add chocolate chips and mix well.",
-                """Roll 2-3 Tablespoons (depending on how large you like your cookies) 
-                        of dough at a time into balls and place them evenly spaced on your 
-                        prepared cookie sheets.""",
-                "Bake in preheated oven for approximately 8-10 minutes. Take them out when they " +
-                        "are just barely starting to turn brown.",
-                "Let them sit on the baking pan for 5 minutes before removing to cooling rack."
-            )
+                "Sauté onion, garlic, and ginger.",
+                "Add chicken and curry powder.",
+                "Pour in coconut milk and tomatoes.",
+                "Simmer until chicken is cooked through."
+            ),
+            difficulty = 2,
+            country = "🇮🇳"
         ),
         Recipe(
             id = 7,
-            title = "red velvet cupcakes",
+            title = "Beef Stroganoff",
             ingredients = listOf(
-                "1⅔ cups all-purpose flour 200g",
-                "2 teaspoons cocoa powder",
-                "1 cup granulated sugar 200g",
-                "1 teaspoon baking powder",
-                "¼ teaspoon baking soda",
-                "¼ teaspoon kosher salt",
-                "¾ cup unsalted butter room temperature (170g)",
-                "3 large eggs room temperature",
-                "2 tablespoons vanilla extract",
-                "¾ cup buttermilk 180ml",
-                "Red food coloring"
-                ),
+                "400g beef strips",
+                "Mushrooms",
+                "Onion",
+                "Sour cream",
+                "Butter",
+                "Paprika",
+                "Egg noodles"
+            ),
             steps = listOf(
-                "For the Cupcakes:",
-                "Preheat the oven to 350°F",
-                "in a large bowl, sift the flour, sugar, cocoa powder baking powder, " +
-                        "and baking soda together. Add the salt and give it a whisk to combine.",
-                """Cut the room temperature butter into tablespoon-sized pieces then add to the dry 
-                        ingredients. Using a paddle attachment, mix on low using until a sandy 
-                        mixture forms.""",
-                """In another bowl, whisk together the eggs, buttermilk, vanilla, and food coloring. 
-                        (Use 1 to 2 tablespoons of liquid food coloring, or 5 to 6 drops of gel 
-                        food coloring. More will give a richer red.)""",
-                "Slowly add the wet ingredients to the dry ingredients while mixing on low. Mix " +
-                        "until combined, scraping the bowl down as needed. Distribute the batter " +
-                        "evenly into cupcake papers.",
-                "Bake for 15 to 20 minutes or until springy to the touch. Let cool for a few " +
-                        "minutes in the pans then remove and cool completely on a wire rack.",
-                "For the Cream Cheese Frosting:",
-                """In a large mixing bowl or the bowl of a stand mixer fitted with the paddle 
-                        attachment, cream the butter on medium speed until smooth and fluffy, 
-                        about 2 minutes.""",
-                """Add the room temperature cream cheese, vanilla, and salt to the creamed butter. 
-                        Beat together on medium speed until well combined. Scrape down the bowl.""",
-                """With the mixer on low speed, add the sifted confectioners sugar a cup at a time. 
-                        Mix until combined. If you’re wanting a stiffer buttercream, keep adding 
-                        more sifted confectioners sugar until it’s the desired texture or chill 
-                        the buttercream for a few minutes before piping.""",
-                "Transfer the buttercream to a piping bag fitted with a star tip and pipe large " +
-                        "dollops on top of each cooled cupcake."
-
-            )
+                "Sauté beef and remove from pan.",
+                "Cook onions and mushrooms.",
+                "Add paprika and sour cream.",
+                "Return beef and serve over noodles."
+            ),
+            difficulty = 2,
+            country = "🇷🇺"
         ),
         Recipe(
             id = 8,
-            title = "creamy mashed potatoes",
+            title = "Pad Thai",
             ingredients = listOf(
-                "4 pounds potatoes russet or Yukon gold",
-                "3 cloves garlic optional",
-                "⅓ cup melted salted butter",
-                "1 cup milk or cream",
-                "salt to taste",
-                "black pepper to taste"
-                ),
+                "200g rice noodles",
+                "Shrimp",
+                "Eggs",
+                "Bean sprouts",
+                "Peanuts",
+                "Tamarind paste",
+                "Fish sauce"
+            ),
             steps = listOf(
-                "Peel and quarter potatoes, place in a pot of cold salted water.",
-                "Add cloves of garlic (if using) & bring to a boil, cook uncovered 15 minutes or " +
-                        "until fork-tender. Drain well.",
-                "Heat milk on the stove top (or in the microwave) until warm.",
-                "Add butter to the potatoes and begin mashing. Pour in heated milk a little at a " +
-                        "time while using a potato masher to reach desired consistency.",
-                "Season with salt and pepper. Serve hot."
-            )
+                "Soak noodles until soft.",
+                "Cook shrimp and eggs in wok.",
+                "Add noodles, tamarind sauce, and sprouts.",
+                "Top with crushed peanuts."
+            ),
+            difficulty = 3,
+            country = "🇹🇭"
         ),
         Recipe(
             id = 9,
-            title = "gravy",
+            title = "Croque Monsieur",
             ingredients = listOf(
-                "▢ 1 chicken stock cube / bouillon cube",
-                "▢ 1 beef stock cube / bouillon cube",
-                "▢ 2 1/4 cups (565ml) boiling water",
-                "▢ 60g/ 4 tbsp butter , unsalted",
-                "▢ 4 tbsp flour , plain / all purpose",
-                "▢ 1/2 tsp onion powder (ok to omit or sub garlic powder)",
-                "▢ 1/4 tsp finely ground black pepper",
-                "▢ Salt "
+                "4 slices white bread",
+                "Ham",
+                "Gruyère cheese",
+                "Butter",
+                "Béchamel sauce"
             ),
             steps = listOf(
-                "Crumble cubes into boiling water, mix to dissolve.",
-                "Melt butter in a saucepan over medium heat.",
-                "Add flour, onion powder and pepper. Mix into butter with a wooden spoon or whisk.",
-                "While stirring, slowly pour in half the liquid. Once incorporated into the flour " +
-                        "butter roux (it will thicken quickly), add remaining liquid and mix.",
-                "Stir for 1.5 – 2 minutes until it thickens to a gravy consistency (it's quick as " +
-                        "water is already hot). Taste, add more salt and pepper if needed.",
-                "Serve over chops, steak, sausages, veggies, roast chicken, pork, beef, lamb."
-            )
+                "Spread béchamel on bread.",
+                "Add ham and cheese between slices.",
+                "Top with more sauce and cheese.",
+                "Bake until golden and bubbly."
+            ),
+            difficulty = 2,
+            country = "🇫🇷"
         ),
         Recipe(
             id = 10,
-            title = "Green bean casserole",
-            ingredients = listOf("" +
-                "2 (15-ounce) cans cut green beans, drained",
-                "1 (10.5-ounce) can condensed cream of mushroom soup",
-                "3/4 cup milk",
-                "1(2.8-ounce) can French fried onions",
-                "salt and ground black pepper to taste"
+            title = "Shakshuka",
+            ingredients = listOf(
+                "4 eggs",
+                "Tomatoes",
+                "Onion",
+                "Garlic",
+                "Bell pepper",
+                "Paprika",
+                "Cumin"
             ),
             steps = listOf(
-                "Preheat the oven to 350 degrees F",
-                "Mix green beans, condensed cream of mushroom soup, milk, and 1/2 of the fried " +
-                        "onions in a 1.5-quart casserole dish",
-                "Bake in the preheated oven until heated through and bubbly, about 25 minutes.",
-                "Sprinkle remaining onions on top and return to the oven for 5 minutes. Season with " +
-                        "salt and pepper to taste. Let rest for a few minutes before serving."
-            )
+                "Sauté onion, garlic, and pepper.",
+                "Add tomatoes and spices; simmer until thick.",
+                "Make wells and crack eggs into sauce.",
+                "Cover and cook until eggs are set."
+            ),
+            difficulty = 2,
+            country = "🇮🇱"
         ),
         Recipe(
             id = 11,
-            title = "home made biscuits",
+            title = "Pierogi",
             ingredients = listOf(
-                "2 cups all-purpose flour (250g)",
-                "1 Tablespoon baking powder",
-                "1 Tablespoon granulated sugar",
-                "1 teaspoon salt",
-                "6 Tablespoons unsalted butter very cold (85g), unsalted European butter is ideal, but not required",
-                "¾ cup whole milk¹ (177ml) buttermilk or 2% milk will also work",
+                "2 cups flour",
+                "1 egg",
+                "1/2 cup water",
+                "Potatoes",
+                "Onion",
+                "Butter"
             ),
             steps = listOf(
-                """For best results, chill your butter in the freezer for 10-20 minutes before 
-                        beginning this recipe. It's ideal that the butter is very cold for light, 
-                        flaky, buttery biscuits.""",
-                """Preheat oven to 425F and line a cookie sheet with nonstick parchment paper. 
-                        Set aside.""",
-                """Combine flour, baking powder, sugar, and salt in a large bowl and mix well.
-                        Set aside.""",
-                """Remove your butter from the refrigerator and either cut it into your flour mixture 
-                        using a pastry cutter or (preferred) use a box grater to shred the butter 
-                        into small pieces and then add to the flour mixture and stir.""",
-                """Cut the butter or combine the grated butter until the mixture resembles coarse 
-                        crumbs.""",
-                """Add milk, use a wooden spoon or spatula to stir until combined (don't over-work 
-                        the dough).""",
-                """Transfer your biscuit dough to a well-floured surface and use your hands to gently 
-                        work the dough together. If the dough is too sticky, add flour until it is 
-                        manageable. """,
-                """Once the dough is cohesive, fold in half over itself and use your hands to gently 
-                        flatten layers together. Rotate the dough 90 degrees and fold in half 
-                        again, repeating this step 5-6 times but taking care to not overwork the 
-                        dough.""",
-                """Use your hands (do not use a rolling pin) to flatten the dough to 1" thick and " +
-                        lightly dust a 2 ¾" round biscuit cutter with flour. """,
-                """Making close cuts, press the biscuit cutter straight down into the dough and 
-                    |drop the biscuit onto your prepared baking sheet.""".trimMargin(),
-                """Repeat until you have gotten as many biscuits as possible and place less than 
-                    |½" apart on baking sheet. """.trimMargin(),
-                """Once you have gotten as many biscuits as possible out of the dough, gently 
-                    |re-work the dough to get out another biscuit or two until you have at least 
-                    |6 biscuits.""".trimMargin(),
-                """Bake on 425F for 12 minutes or until tops are beginning to just turn lightly 
-                    |golden brown.""".trimMargin(),
-                """If desired, brush with melted salted butter immediately after removing from oven. 
-                    |Serve warm and enjoy.""".trimMargin()
-            )
+                "Make dough and roll thin.",
+                "Prepare potato filling.",
+                "Cut circles, fill, and seal edges.",
+                "Boil until they float, then pan-fry in butter."
+            ),
+            difficulty = 3,
+            country = "🇵🇱"
         ),
         Recipe(
             id = 12,
-            title = "Classic Pancakes",
+            title = "Feijoada",
             ingredients = listOf(
-                "1 cup flour",
-                "2 tbsp sugar",
-                "1 egg",
-                "1 cup milk",
-                "1 tsp baking powder"
+                "500g black beans",
+                "300g pork",
+                "300g sausage",
+                "Onion",
+                "Garlic",
+                "Bay leaves",
+                "Rice"
             ),
             steps = listOf(
-                "In a bowl, whisk together flour, sugar, and baking powder.",
-                "Add milk and egg, then mix until smooth.",
-                "Heat a lightly oiled skillet and pour ¼ cup batter for each pancake.",
-                "Cook until bubbles form, then flip and cook until golden."
-            )
+                "Soak beans overnight.",
+                "Cook meats and add beans with spices.",
+                "Simmer until thick and flavorful.",
+                "Serve with rice."
+            ),
+            difficulty = 3,
+            country = "🇧🇷"
         ),
         Recipe(
             id = 13,
-            title = "Spaghetti Bolognese",
+            title = "Poutine",
             ingredients = listOf(
-                "200g spaghetti",
-                "1 onion",
-                "2 cloves garlic",
-                "250g ground beef",
-                "1 cup tomato sauce"
+                "French fries",
+                "Cheese curds",
+                "Beef gravy"
             ),
             steps = listOf(
-                "Cook spaghetti according to package instructions.",
-                "Sauté onion and garlic in olive oil until translucent.",
-                "Add beef and cook until browned.",
-                "Pour in tomato sauce and simmer for 15 minutes.",
-                "Serve over spaghetti with grated cheese."
-            )
+                "Fry potatoes until crisp.",
+                "Place fries on plate, top with cheese curds.",
+                "Pour hot gravy over to melt cheese."
+            ),
+            difficulty = 1,
+            country = "🇨🇦"
         ),
         Recipe(
             id = 14,
-            title = "Vegetable Curry",
+            title = "Paella",
             ingredients = listOf(
-                "1 onion",
-                "2 carrots",
-                "1 potato",
-                "1 cup coconut milk",
-                "2 tbsp curry paste"
+                "1 cup rice",
+                "Saffron",
+                "Chicken",
+                "Shrimp",
+                "Peas",
+                "Bell pepper",
+                "Olive oil"
             ),
             steps = listOf(
-                "Sauté onion until translucent.",
-                "Add chopped vegetables and curry paste, cook for 5 minutes.",
-                "Pour in coconut milk and simmer until vegetables are tender."
-            )
+                "Sauté chicken and vegetables.",
+                "Add rice and saffron broth.",
+                "Simmer and add seafood.",
+                "Cook until liquid is absorbed."
+            ),
+            difficulty = 3,
+            country = "🇪🇸"
         ),
         Recipe(
             id = 15,
-            title = "Chicken Stir-Fry",
+            title = "Kimchi Fried Rice",
             ingredients = listOf(
-                "200g chicken breast",
-                "1 bell pepper",
-                "1 onion",
-                "2 tbsp soy sauce",
-                "1 tsp sesame oil"
+                "2 cups cooked rice",
+                "Kimchi",
+                "Eggs",
+                "Soy sauce",
+                "Sesame oil",
+                "Green onion"
             ),
             steps = listOf(
-                "Slice chicken and vegetables into strips.",
-                "Stir-fry chicken until cooked through.",
-                "Add vegetables and cook for 3–5 minutes.",
-                "Pour in soy sauce and sesame oil, toss well, and serve."
-            )
+                "Sauté kimchi and rice.",
+                "Add soy sauce and sesame oil.",
+                "Top with fried egg and green onions."
+            ),
+            difficulty = 2,
+            country = "🇰🇷"
         ),
         Recipe(
             id = 16,
-            title = "Chocolate Brownies",
+            title = "Fish and Chips",
             ingredients = listOf(
-                "1/2 cup butter",
-                "1 cup sugar",
-                "2 eggs",
-                "1/3 cup cocoa powder",
-                "1/2 cup flour"
+                "White fish fillets",
+                "Flour",
+                "Beer",
+                "Potatoes",
+                "Salt",
+                "Oil"
             ),
             steps = listOf(
-                "Preheat oven to 350°F.",
-                "Melt butter, then stir in sugar, eggs, and cocoa.",
-                "Add flour and mix until smooth.",
-                "Pour into a pan and bake for 20–25 minutes."
-            )
+                "Make batter with flour and beer.",
+                "Dip fish and fry until golden.",
+                "Serve with fries and salt."
+            ),
+            difficulty = 2,
+            country = "🇬🇧"
         ),
         Recipe(
             id = 17,
-            title = "Caprese Salad",
+            title = "Falafel",
             ingredients = listOf(
-                "2 tomatoes",
-                "125g mozzarella",
-                "Fresh basil leaves",
-                "Olive oil",
-                "Salt",
-                "Pepper"
+                "Chickpeas",
+                "Garlic",
+                "Onion",
+                "Parsley",
+                "Cumin",
+                "Coriander",
+                "Flour"
             ),
             steps = listOf(
-                "Slice tomatoes and mozzarella.",
-                "Layer them alternately with basil leaves.",
-                "Drizzle with olive oil, season with salt and pepper."
-            )
+                "Blend chickpeas with herbs and spices.",
+                "Form balls and fry until crisp.",
+                "Serve with pita and tahini sauce."
+            ),
+            difficulty = 2,
+            country = "🇱🇧"
         ),
         Recipe(
             id = 18,
-            title = "Garlic Butter Shrimp",
+            title = "Beef Bulgogi",
             ingredients = listOf(
-                "250g shrimp",
-                "3 cloves garlic",
-                "2 tbsp butter",
-                "Lemon juice",
-                "Parsley"
+                "Beef slices",
+                "Soy sauce",
+                "Garlic",
+                "Sugar",
+                "Sesame oil",
+                "Green onion"
             ),
             steps = listOf(
-                "Melt butter in a skillet and add minced garlic.",
-                "Add shrimp and cook until pink.",
-                "Squeeze lemon juice and sprinkle with parsley before serving."
-            )
+                "Marinate beef with sauce mixture.",
+                "Grill or pan-fry until caramelized.",
+                "Serve with rice and kimchi."
+            ),
+            difficulty = 2,
+            country = "🇰🇷"
         ),
         Recipe(
             id = 19,
-            title = "Banana Smoothie",
+            title = "Goulash",
             ingredients = listOf(
-                "1 banana",
-                "1 cup milk",
-                "1 tbsp honey",
-                "Ice cubes"
+                "500g beef",
+                "Onion",
+                "Paprika",
+                "Tomato paste",
+                "Potatoes",
+                "Carrots"
             ),
             steps = listOf(
-                "Add all ingredients to a blender.",
-                "Blend until smooth.",
-                "Serve chilled."
-            )
+                "Brown beef and onions.",
+                "Add paprika and tomato paste.",
+                "Simmer with potatoes and carrots until tender."
+            ),
+            difficulty = 3,
+            country = "🇭🇺"
         ),
         Recipe(
             id = 20,
-            title = "Veggie Omelette",
+            title = "Ceviche",
             ingredients = listOf(
-                "2 eggs",
-                "1/4 cup diced peppers",
-                "1/4 cup onions",
-                "Salt",
-                "Pepper"
+                "White fish",
+                "Lime juice",
+                "Onion",
+                "Cilantro",
+                "Chili pepper",
+                "Salt"
             ),
             steps = listOf(
-                "Beat eggs with salt and pepper.",
-                "Cook vegetables in a non-stick pan for 2 minutes.",
-                "Pour eggs over vegetables and cook until set.",
-                "Fold and serve warm."
-            )
+                "Marinate fish in lime juice until opaque.",
+                "Add chopped onion, cilantro, and chili.",
+                "Serve chilled."
+            ),
+            difficulty = 2,
+            country = "🇵🇪"
         ),
         Recipe(
             id = 21,
-            title = "Grilled Cheese Sandwich",
+            title = "Ratatouille",
             ingredients = listOf(
-                "2 slices bread",
-                "Butter",
-                "2 slices cheese"
+                "Eggplant",
+                "Zucchini",
+                "Tomatoes",
+                "Bell pepper",
+                "Onion",
+                "Garlic",
+                "Olive oil"
             ),
             steps = listOf(
-                "Butter the bread slices.",
-                "Place cheese between slices.",
-                "Grill in a pan until golden brown on both sides."
-            )
+                "Sauté vegetables separately.",
+                "Layer in dish with sauce.",
+                "Bake until tender."
+            ),
+            difficulty = 2,
+            country = "🇫🇷"
         ),
         Recipe(
             id = 22,
-            title = "Tomato Soup",
+            title = "Hummus",
             ingredients = listOf(
-                "4 tomatoes",
-                "1 onion",
-                "2 cloves garlic",
-                "1 cup vegetable broth"
+                "Chickpeas",
+                "Tahini",
+                "Lemon juice",
+                "Garlic",
+                "Olive oil",
+                "Salt"
             ),
             steps = listOf(
-                "Sauté onion and garlic until soft.",
-                "Add chopped tomatoes and broth.",
-                "Simmer for 15 minutes, then blend until smooth."
-            )
+                "Blend all ingredients until smooth.",
+                "Adjust seasoning to taste.",
+                "Serve with pita bread."
+            ),
+            difficulty = 1,
+            country = "🇮🇱"
         ),
         Recipe(
             id = 23,
-            title = "Beef Tacos",
+            title = "Moussaka",
             ingredients = listOf(
-                "6 taco shells",
-                "250g ground beef",
-                "1 tomato",
-                "Lettuce",
-                "Cheddar cheese"
+                "Eggplant",
+                "Ground beef",
+                "Tomatoes",
+                "Onion",
+                "Béchamel sauce",
+                "Cheese"
             ),
             steps = listOf(
-                "Cook ground beef with seasoning.",
-                "Fill taco shells with beef, tomato, lettuce, and cheese."
-            )
+                "Cook meat sauce with tomatoes.",
+                "Layer with eggplant and béchamel.",
+                "Bake until golden."
+            ),
+            difficulty = 3,
+            country = "🇬🇷"
         ),
         Recipe(
             id = 24,
-            title = "Fruit Salad",
+            title = "Chili con Carne",
             ingredients = listOf(
-                "Apple",
-                "Banana",
-                "Grapes",
-                "Strawberries",
-                "Honey"
+                "Ground beef",
+                "Beans",
+                "Tomatoes",
+                "Onion",
+                "Garlic",
+                "Chili powder"
             ),
             steps = listOf(
-                "Chop all fruits and place in a bowl.",
-                "Drizzle with honey and mix well."
-            )
+                "Cook beef and onions.",
+                "Add beans, tomatoes, and spices.",
+                "Simmer until thick."
+            ),
+            difficulty = 2,
+            country = "🇲🇽"
         ),
         Recipe(
             id = 25,
-            title = "Garlic Bread",
+            title = "Shepherd’s Pie",
             ingredients = listOf(
-                "1 baguette",
-                "3 cloves garlic",
-                "2 tbsp butter",
-                "Parsley"
+                "Ground lamb",
+                "Onion",
+                "Carrots",
+                "Peas",
+                "Mashed potatoes",
+                "Butter"
             ),
             steps = listOf(
-                "Mix butter, minced garlic, and parsley.",
-                "Spread on baguette slices and bake until golden."
-            )
+                "Cook filling and place in dish.",
+                "Top with mashed potatoes.",
+                "Bake until golden."
+            ),
+            difficulty = 2,
+            country = "🇬🇧"
         ),
         Recipe(
             id = 26,
-            title = "Fried Rice",
+            title = "Tom Yum Soup",
             ingredients = listOf(
-                "1 cup cooked rice",
-                "1 egg", "1 carrot",
-                "2 tbsp soy sauce"
+                "Shrimp",
+                "Lemongrass",
+                "Galangal",
+                "Lime leaves",
+                "Chili paste",
+                "Lime juice"
             ),
             steps = listOf(
-                "Scramble the egg and set aside.",
-                "Stir-fry vegetables, then add rice and soy sauce.",
-                "Mix in scrambled egg before serving."
-            )
+                "Boil broth with herbs.",
+                "Add shrimp and chili paste.",
+                "Finish with lime juice."
+            ),
+            difficulty = 3,
+            country = "🇹🇭"
         ),
         Recipe(
             id = 27,
-            title = "Garlic Roasted Potatoes",
+            title = "Empanadas",
             ingredients = listOf(
-                "4 potatoes",
-                "2 tbsp olive oil",
-                "3 cloves garlic",
-                "Salt",
-                "Pepper",
-                "Rosemary"
+                "Flour",
+                "Butter",
+                "Ground beef",
+                "Onion",
+                "Egg",
+                "Olives"
             ),
             steps = listOf(
-                "Preheat oven to 400°F.",
-                "Cut potatoes into cubes and toss with oil, garlic, salt, pepper, and rosemary.",
-                "Spread on a baking sheet and roast for 30 minutes, flipping halfway."
-            )
+                "Make dough and roll out circles.",
+                "Add filling and fold over.",
+                "Bake or fry until golden."
+            ),
+            difficulty = 3,
+            country = "🇦🇷"
         ),
         Recipe(
             id = 28,
-            title = "Lemonade",
+            title = "Borscht",
             ingredients = listOf(
-                "2 lemons",
-                "3 cups water",
-                "2 tbsp sugar"
+                "Beets",
+                "Cabbage",
+                "Potatoes",
+                "Carrots",
+                "Onion",
+                "Sour cream"
             ),
             steps = listOf(
-                "Juice lemons into a pitcher.",
-                "Add water and sugar, stir well."
-            )
+                "Cook vegetables in broth.",
+                "Add beets and simmer.",
+                "Serve with sour cream."
+            ),
+            difficulty = 2,
+            country = "🇺🇦"
         ),
         Recipe(
             id = 29,
-            title = "French Toast",
+            title = "Pho",
             ingredients = listOf(
-                "2 eggs",
-                "1/2 cup milk",
-                "2 slices bread",
-                "Cinnamon"
+                "Beef bones",
+                "Rice noodles",
+                "Star anise",
+                "Cinnamon",
+                "Ginger",
+                "Onion",
+                "Fish sauce"
             ),
             steps = listOf(
-                "Mix eggs, milk, and cinnamon.",
-                "Dip bread into mixture and cook on a skillet until golden."
-            )
+                "Simmer bones and spices for broth.",
+                "Cook noodles separately.",
+                "Serve with broth, beef slices, and herbs."
+            ),
+            difficulty = 3,
+            country = "🇻🇳"
         ),
         Recipe(
             id = 30,
-            title = "Chicken Soup",
+            title = "Tagine",
             ingredients = listOf(
-                "200g chicken",
-                "1 carrot",
-                "1 onion",
-                "4 cups broth"
-            ),
-            steps = listOf(
-                "Cook chicken in broth until tender.",
-                "Add vegetables and simmer for 20 minutes."
-            )
-        ),
-        Recipe(
-            id = 31,
-            title = "Greek Salad",
-            ingredients = listOf(
-                "Cucumber",
-                "Tomatoes",
-                "Feta cheese",
-                "Olives",
-                "Olive oil"
-            ),
-            steps = listOf(
-                "Chop vegetables and combine in a bowl.",
-                "Add feta and drizzle with olive oil."
-            )
-        ),
-        Recipe(
-            id = 32,
-            title = "Blueberry Muffins",
-            ingredients = listOf(
-                "2 cups flour",
-                "1 cup sugar",
-                "1 cup blueberries",
-                "1 egg", "1/2 cup milk"
-            ),
-            steps = listOf(
-                "Preheat oven to 375°F.",
-                "Mix dry ingredients, add wet ingredients, then fold in blueberries.",
-                "Bake for 20 minutes."
-            )
-        ),
-        Recipe(
-            id = 33,
-            title = "Caesar Salad",
-            ingredients = listOf(
-                "Lettuce",
-                "Croutons",
-                "Parmesan cheese",
-                "Caesar dressing"
-            ),
-            steps = listOf(
-                "Toss lettuce with dressing, top with croutons and cheese."
-            )
-        ),
-        Recipe(
-            id = 34,
-            title = "Omelette Sandwich",
-            ingredients = listOf(
-                "2 slices bread",
-                "2 eggs",
-                "Salt",
-                "Pepper",
-                "Butter"),
-            steps = listOf(
-                "Make an omelette and place it between buttered toast slices."
-            )
-        ),
-        Recipe(
-            id = 35,
-            title = "Mango Smoothie",
-            ingredients = listOf(
-                "1 mango",
-                "1 cup yogurt",
-                "1 tbsp honey",
-                "Ice cubes"
-            ),
-            steps = listOf(
-                "Blend all ingredients until smooth and creamy."
-            )
-        ),
-        Recipe(
-            id = 36,
-            title = "Garlic Pasta",
-            ingredients = listOf(
-                "200g pasta",
-                "3 cloves garlic",
-                "2 tbsp butter",
-                "Parmesan"
-            ),
-            steps = listOf(
-                "Boil pasta and drain.",
-                "Sauté garlic in butter, add pasta, and toss with Parmesan."
-            )
-        ),
-        Recipe(
-            id = 37,
-            title = "Cucumber Sandwich",
-            ingredients = listOf(
-                "2 slices bread",
-                "1/2 cucumber",
-                "Cream cheese"
-            ),
-            steps = listOf(
-                "Spread cream cheese on bread, layer cucumber slices, and close sandwich."
-            )
-        ),
-        Recipe(
-            id = 38,
-            title = "Chocolate Milkshake",
-            ingredients = listOf(
-                "1 cup milk",
-                "2 tbsp cocoa powder",
-                "1 scoop ice cream"
-            ),
-            steps = listOf(
-                "Blend all ingredients until frothy and smooth."
-            )
-        ),
-        Recipe(
-            id = 39,
-            title = "Honey Glazed Carrots",
-            ingredients = listOf(
-                "3 carrots",
-                "1 tbsp butter",
-                "1 tbsp honey"
-            ),
-            steps = listOf(
-                "Cook carrots until tender, then toss with melted butter and honey."
-            )
-        ),
-        Recipe(
-            id = 40,
-            title = "Grilled Chicken",
-            ingredients = listOf(
-                "1 chicken breast",
-                "Olive oil",
+                "Chicken",
+                "Onion",
                 "Garlic",
-                "Lemon juice",
-                "Salt",
-                "Pepper"
-            ),
-            steps = listOf(
-                "Marinate chicken with ingredients for 30 minutes.",
-                "Grill for 6–8 minutes per side until cooked through."
-            )
-        ),
-        Recipe(
-            id = 41,
-            title = "Berry Parfait",
-            ingredients = listOf(
-                "Yogurt",
-                "Granola",
-                "Mixed berries",
-                "Honey"
-            ),
-            steps = listOf(
-                "Layer yogurt, berries, and granola in a glass.",
-                "Drizzle honey on top before serving."
-            )
-        ),
-        Recipe(
-            id = 42,
-            title = "Avocado Smoothie",
-            ingredients = listOf(
-                "1 avocado",
-                "1 cup milk",
-                "1 tbsp honey",
-                "Ice cubes"
-            ),
-            steps = listOf(
-                "Blend all ingredients until smooth and creamy."
-            )
-        ),
-        Recipe(
-            id = 43,
-            title = "Peanut Butter Cookies",
-            ingredients = listOf(
-                "1 cup peanut butter",
-                "1 cup sugar",
-                "1 egg"),
-            steps = listOf(
-                "Mix all ingredients together.",
-                "Scoop onto a baking tray and bake at 350°F for 10 minutes."
-            )
-        ),
-        Recipe(
-            id = 44,
-            title = "Tuna Sandwich",
-            ingredients = listOf(
-                "Bread",
-                "Tuna",
-                "Mayonnaise",
-                "Lettuce"
-            ),
-            steps = listOf(
-                "Mix tuna with mayo and spread on bread with lettuce."
-            )
-        ),
-        Recipe(
-            id = 45,
-            title = "Apple Pie",
-            ingredients = listOf(
-                "2 apples",
-                "Pie crust",
-                "Sugar",
+                "Lemon",
+                "Olives",
+                "Cumin",
                 "Cinnamon"
             ),
             steps = listOf(
-                "Slice apples and toss with sugar and cinnamon.",
-                "Fill crust and bake at 375°F for 40 minutes."
-            )
+                "Brown chicken with spices.",
+                "Add onions, garlic, and lemon.",
+                "Simmer slowly until tender."
+            ),
+            difficulty = 3,
+            country = "🇲🇦"
+        ),
+        Recipe(
+            id = 31,
+            title = "Carbonara",
+            ingredients = listOf(
+                "200g spaghetti",
+                "100g pancetta",
+                "2 eggs",
+                "50g Parmesan cheese",
+                "Black pepper",
+                "Salt"
+            ),
+            steps = listOf(
+                "Cook pasta in salted water.",
+                "Fry pancetta until crisp.",
+                "Whisk eggs and cheese together.",
+                "Combine pasta, pancetta, and egg mixture off heat.",
+                "Serve with black pepper."
+            ),
+            difficulty = 2,
+            country = "🇮🇹"
+        ),
+        Recipe(
+            id = 32,
+            title = "Baklava",
+            ingredients = listOf(
+                "Phyllo dough",
+                "Walnuts",
+                "Butter",
+                "Sugar",
+                "Honey",
+                "Cinnamon"
+            ),
+            steps = listOf(
+                "Layer phyllo with butter and nuts.",
+                "Bake until golden.",
+                "Pour honey syrup over cooled layers."
+            ),
+            difficulty = 3,
+            country = "🇹🇷"
+        ),
+        Recipe(
+            id = 33,
+            title = "Couscous with Vegetables",
+            ingredients = listOf(
+                "Couscous",
+                "Carrots",
+                "Zucchini",
+                "Chickpeas",
+                "Onion",
+                "Spices"
+            ),
+            steps = listOf(
+                "Cook vegetables with spices.",
+                "Steam couscous until fluffy.",
+                "Serve vegetables over couscous."
+            ),
+            difficulty = 2,
+            country = "🇩🇿"
+        ),
+        Recipe(
+            id = 34,
+            title = "Irish Stew",
+            ingredients = listOf(
+                "Lamb",
+                "Potatoes",
+                "Carrots",
+                "Onion",
+                "Thyme",
+                "Beef stock"
+            ),
+            steps = listOf(
+                "Brown lamb and add vegetables.",
+                "Pour in stock and herbs.",
+                "Simmer until meat is tender."
+            ),
+            difficulty = 2,
+            country = "🇮🇪"
+        ),
+        Recipe(
+            id = 35,
+            title = "Okonomiyaki",
+            ingredients = listOf(
+                "Cabbage",
+                "Flour",
+                "Eggs",
+                "Pork belly",
+                "Mayonnaise",
+                "Okonomiyaki sauce"
+            ),
+            steps = listOf(
+                "Mix batter with cabbage and eggs.",
+                "Cook pancake and top with pork.",
+                "Drizzle with sauces and serve."
+            ),
+            difficulty = 3,
+            country = "🇯🇵"
+        ),
+        Recipe(
+            id = 36,
+            title = "Rendang",
+            ingredients = listOf(
+                "Beef",
+                "Coconut milk",
+                "Chili",
+                "Garlic",
+                "Ginger",
+                "Lemongrass",
+                "Turmeric"
+            ),
+            steps = listOf(
+                "Blend spices into a paste.",
+                "Simmer beef in coconut milk and paste.",
+                "Cook slowly until sauce thickens and darkens."
+            ),
+            difficulty = 3,
+            country = "🇮🇩"
+        ),
+        Recipe(
+            id = 37,
+            title = "Pierna Adobada",
+            ingredients = listOf(
+                "Pork leg",
+                "Guajillo chiles",
+                "Garlic",
+                "Vinegar",
+                "Cumin",
+                "Oregano"
+            ),
+            steps = listOf(
+                "Blend adobo sauce ingredients.",
+                "Marinate pork overnight.",
+                "Roast until tender."
+            ),
+            difficulty = 3,
+            country = "🇲🇽"
+        ),
+        Recipe(
+            id = 38,
+            title = "Churrasco",
+            ingredients = listOf(
+                "Beef steak",
+                "Garlic",
+                "Olive oil",
+                "Salt",
+                "Chimichurri sauce"
+            ),
+            steps = listOf(
+                "Marinate steak with oil and garlic.",
+                "Grill to desired doneness.",
+                "Serve with chimichurri."
+            ),
+            difficulty = 2,
+            country = "🇺🇾"
+        ),
+        Recipe(
+            id = 39,
+            title = "Miso Soup",
+            ingredients = listOf(
+                "Miso paste",
+                "Dashi broth",
+                "Tofu",
+                "Seaweed",
+                "Green onions"
+            ),
+            steps = listOf(
+                "Heat dashi broth.",
+                "Dissolve miso paste.",
+                "Add tofu and seaweed.",
+                "Garnish with green onions."
+            ),
+            difficulty = 1,
+            country = "🇯🇵"
+        ),
+        Recipe(
+            id = 40,
+            title = "Kebab",
+            ingredients = listOf(
+                "Lamb cubes",
+                "Yogurt",
+                "Garlic",
+                "Cumin",
+                "Paprika",
+                "Salt",
+                "Skewers"
+            ),
+            steps = listOf(
+                "Marinate lamb in yogurt and spices.",
+                "Thread onto skewers.",
+                "Grill until cooked through."
+            ),
+            difficulty = 2,
+            country = "🇹🇷"
+        ),
+        Recipe(
+            id = 41,
+            title = "Pavlova",
+            ingredients = listOf(
+                "Egg whites",
+                "Sugar",
+                "Cornstarch",
+                "Vinegar",
+                "Whipped cream",
+                "Berries"
+            ),
+            steps = listOf(
+                "Beat egg whites with sugar until stiff.",
+                "Bake slowly until crisp outside.",
+                "Top with cream and berries."
+            ),
+            difficulty = 3,
+            country = "🇳🇿"
+        ),
+        Recipe(
+            id = 42,
+            title = "Kaiserschmarrn",
+            ingredients = listOf(
+                "Flour",
+                "Milk",
+                "Eggs",
+                "Sugar",
+                "Butter",
+                "Raisins"
+            ),
+            steps = listOf(
+                "Make thick pancake batter.",
+                "Cook in butter and tear into pieces.",
+                "Dust with sugar and serve."
+            ),
+            difficulty = 2,
+            country = "🇦🇹"
+        ),
+        Recipe(
+            id = 43,
+            title = "Jollof Rice",
+            ingredients = listOf(
+                "Rice",
+                "Tomatoes",
+                "Onion",
+                "Bell pepper",
+                "Oil",
+                "Spices"
+            ),
+            steps = listOf(
+                "Blend vegetables for sauce.",
+                "Fry sauce and add rice.",
+                "Cook until rice absorbs all flavor."
+            ),
+            difficulty = 2,
+            country = "🇳🇬"
+        ),
+        Recipe(
+            id = 44,
+            title = "Sauerbraten",
+            ingredients = listOf(
+                "Beef roast",
+                "Vinegar",
+                "Onion",
+                "Carrots",
+                "Ginger snaps",
+                "Beef broth"
+            ),
+            steps = listOf(
+                "Marinate beef in vinegar and spices for days.",
+                "Roast slowly in oven.",
+                "Serve with gravy."
+            ),
+            difficulty = 3,
+            country = "🇩🇪"
+        ),
+        Recipe(
+            id = 45,
+            title = "Arepas",
+            ingredients = listOf(
+                "Cornmeal",
+                "Water",
+                "Salt",
+                "Cheese",
+                "Butter"
+            ),
+            steps = listOf(
+                "Mix cornmeal with water and salt.",
+                "Shape into patties and cook on griddle.",
+                "Fill with cheese or meat."
+            ),
+            difficulty = 1,
+            country = "🇻🇪"
         ),
         Recipe(
             id = 46,
-            title = "Vanilla Cupcakes",
+            title = "Samosa",
             ingredients = listOf(
-                "1 cup flour",
-                "1/2 cup sugar",
-                "1/2 cup butter",
-                "1 egg",
-                "1 tsp vanilla"
+                "Flour",
+                "Potatoes",
+                "Peas",
+                "Cumin",
+                "Ginger",
+                "Oil"
             ),
             steps = listOf(
-                "Preheat oven to 350°F.",
-                "Mix ingredients and bake for 18 minutes."
-            )
+                "Prepare dough and potato filling.",
+                "Fill and fold triangles.",
+                "Fry until golden and crisp."
+            ),
+            difficulty = 3,
+            country = "🇮🇳"
         ),
         Recipe(
             id = 47,
-            title = "Tomato Bruschetta",
+            title = "Cassoulet",
             ingredients = listOf(
-                "Bread",
+                "White beans",
+                "Sausage",
+                "Duck confit",
                 "Tomatoes",
                 "Garlic",
-                "Basil",
-                "Olive oil"
+                "Herbs"
             ),
             steps = listOf(
-                "Toast bread and top with diced tomatoes, garlic, basil, and olive oil."
-            )
+                "Simmer beans with meats and herbs.",
+                "Layer in dish and bake slowly.",
+                "Serve hot."
+            ),
+            difficulty = 3,
+            country = "🇫🇷"
         ),
         Recipe(
             id = 48,
-            title = "Cinnamon Oatmeal",
+            title = "Pancit Canton",
             ingredients = listOf(
-                "1 cup oats",
-                "2 cups milk",
-                "1 tsp cinnamon",
-                "Honey"),
+                "Egg noodles",
+                "Chicken",
+                "Shrimp",
+                "Carrots",
+                "Cabbage",
+                "Soy sauce"
+            ),
             steps = listOf(
-                "Cook oats in milk until thickened.",
-                "Stir in cinnamon and drizzle with honey."
-            )
+                "Cook meats and vegetables.",
+                "Add noodles and sauce.",
+                "Stir-fry until well combined."
+            ),
+            difficulty = 2,
+            country = "🇵🇭"
         ),
         Recipe(
             id = 49,
-            title = "Lentil Soup",
+            title = "Bobotie",
             ingredients = listOf(
-                "1 cup lentils",
-                "1 onion",
-                "2 carrots",
-                "4 cups broth"
+                "Ground beef",
+                "Onion",
+                "Curry powder",
+                "Raisins",
+                "Milk",
+                "Eggs",
+                "Bread"
             ),
             steps = listOf(
-                "Sauté onion and carrots, then add lentils and broth.",
-                "Simmer for 25 minutes until soft."
-            )
+                "Cook meat with spices and raisins.",
+                "Top with egg and milk mixture.",
+                "Bake until golden."
+            ),
+            difficulty = 3,
+            country = "🇿🇦"
         ),
         Recipe(
             id = 50,
-            title = "Peach Smoothie",
+            title = "Clam Chowder",
             ingredients = listOf(
-                "1 peach",
-                "1 banana",
-                "1 cup milk",
-                "Ice cubes"
+                "Clams",
+                "Potatoes",
+                "Onion",
+                "Celery",
+                "Cream",
+                "Butter"
             ),
             steps = listOf(
-                "Blend all ingredients until smooth."
-            )
-        ),
+                "Cook vegetables in butter.",
+                "Add clams and cream.",
+                "Simmer until thick."
+            ),
+            difficulty = 2,
+            country = "🇺🇸"
+        )
     )
-    //Sort By alphabet by name of Recipe
-        .sortedBy { it.title }
+        .sortedWith(compareBy({ it.country }, { it.title }))
 }
