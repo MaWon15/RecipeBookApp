@@ -3,6 +3,7 @@ package com.example.recipebookapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -12,7 +13,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.lifecycle.viewmodel.compose.viewModel
 
-//import com.example.recipebookapp.ui.theme
+import com.example.recipebookapp.ui.theme.FavoritesScreen
 //import com.example.recipebookapp.ui.theme.DetailScreen
 import com.example.recipebookapp.ui.theme.HomeScreen
 import com.example.recipebookapp.ui.theme.RecipeBookAppTheme
@@ -22,7 +23,7 @@ import com.example.recipebookapp.vm.RecipeViewModel
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //enableEdgeToEdge()
+        enableEdgeToEdge()
         setContent {
             RecipeBookAppTheme {
                 TopTabsApp()
@@ -93,25 +94,27 @@ private fun TopTabsApp() {
                 val favRecipes = remember(vm.recipes, vm.favoriteIds) {
                     vm.recipes.filter { it.id in vm.favoriteIds }
                 }
-                //FavoriteScreen(
-                //    favoriteRecipes = favRecipes,
-                //    favoriteIds = vm.favoriteIds,
-                //    onToggleFavorite = {id -> vm.toggleFavorite(id)},
-                //    onRecipeClick = { id -> navController.navigate("details/#id")}
-                //    vm = vm
-                //)
+                FavoritesScreen(
+                    favoriteRecipes = favRecipes,
+                    favoriteIds = vm.favoriteIds,
+                    onToggleFavorite = {id -> vm.toggleFavorite(id)},
+                    onRecipeClick = { id -> navController.navigate("details/$id")},
+                    vm = vm
+                )
+
             }
 
-            composable("details/{id}") { backStackEntry ->
-                val id = backStackEntry.arguments?.getString("id")?.toIntOrNull() ?: -1
-                //DetailScreen(
-                //    vm = vm,
-                //    id = id,
-                //    onBack = { navController.popBackStack() }
-                //)
-            }
+            //composable("details/{id}") { backStackEntry ->
+            //    val id = backStackEntry.arguments?.getString("id")?.toIntOrNull() ?: -1
+            //    DetailScreen(
+            //        vm = vm,
+            //        id = id,
+            //        onBack = { navController.popBackStack() }
+            //    )
+            //}
         }
     }
 }
+
 
 
