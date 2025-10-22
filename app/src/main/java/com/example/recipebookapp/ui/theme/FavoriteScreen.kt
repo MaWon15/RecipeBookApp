@@ -12,8 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.recipebookapp.data.Recipe
-import com.example.recipebookapp.ui.theme.RecipeRow
 import androidx.compose.material3.HorizontalDivider
+import com.example.recipebookapp.vm.RecipeViewModel
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -25,7 +25,8 @@ fun FavoritesScreen(
     favoriteIds: Set<Int>,
     onToggleFavorite: (Int) -> Unit,
     onRecipeClick: (Int) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    vm: RecipeViewModel
 ) {
     Scaffold(
         modifier = modifier,
@@ -68,3 +69,5 @@ fun FavoritesScreen(
         }
     }
 }
+
+

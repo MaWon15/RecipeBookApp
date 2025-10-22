@@ -3,92 +3,115 @@ package com.example.recipebookapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountBox
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material3.Icon
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffold
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.PreviewScreenSizes
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import androidx.lifecycle.viewmodel.compose.viewModel
+
+//import com.example.recipebookapp.ui.theme
+import com.example.recipebookapp.ui.theme.DetailScreen
+import com.example.recipebookapp.ui.theme.HomeScreen
 import com.example.recipebookapp.ui.theme.RecipeBookAppTheme
+import com.example.recipebookapp.vm.RecipeViewModel
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        //enableEdgeToEdge()
         setContent {
             RecipeBookAppTheme {
-                RecipeBookAppApp()
+                TopTabsApp()
             }
         }
     }
 }
 
-@PreviewScreenSizes
-@Composable
-fun RecipeBookAppApp() {
-    var currentDestination by rememberSaveable { mutableStateOf(AppDestinations.HOME) }
+private enum class TopTab(val route: String, val label: String) {
+    HOME("home", "Home"),
+    FAV("favorites", "Fav")
+}
 
-    NavigationSuiteScaffold(
-        navigationSuiteItems = {
-            AppDestinations.entries.forEach {
-                item(
-                    icon = {
-                        Icon(
-                            it.icon,
-                            contentDescription = it.label
-                        )
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun TopTabsApp() {
+    val navController = rememberNavController()
+    val vm: RecipeViewModel = viewModel()
+
+    var selectedTab by remember { mutableIntStateOf(0) }
+    val tabs = listOf("Home", "Fav")
+
+    Scaffold(
+        topBar = {
+            TabRow(selectedTabIndex = selectedTab) {
+                tabs.forEachIndexed { index, label ->
+                    Tab(
+                        selected = selectedTab == index,
+                        onClick = {
+                            selectedTab = index
+                            when (index) {
+                                0 -> navController.navigate("home") {
+                                    popUpTo("home") { inclusive = true }
+                                }
+                                1 -> navController.navigate("favorites") {
+                                    popUpTo("favorites") { inclusive = true }
+                                }
+                            }
+                        },
+                        text = { Text(label) }
+                    )
+                }
+            }
+        }
+    ) { innerPadding ->
+        NavHost(
+            navController = navController,
+            startDestination = TopTab.HOME.route,
+            modifier = Modifier.padding(innerPadding)
+        ) {
+            composable("home") {
+                HomeScreen(
+                    recipes = vm.recipes,
+                    favoriteIds = vm.favoriteIds,
+                    onRecipeClick = { id -> navController.navigate("details/$id") },
+                    onToggleFavorite = { id -> vm.toggleFavorite(id) },
+                    onOpenFavorites = {
+                        selectedTab = 1
+                        navController.navigate(TopTab.FAV.route) {
+                            popUpTo(TopTab.FAV.route) { inclusive = true }
+                        }
                     },
-                    label = { Text(it.label) },
-                    selected = it == currentDestination,
-                    onClick = { currentDestination = it }
+                    vm = vm
+                )
+            }
+
+            composable(TopTab.FAV.route) {
+                val favRecipes = remember(vm.recipes, vm.favoriteIds) {
+                    vm.recipes.filter { it.id in vm.favoriteIds }
+                }
+                FavoriteScreen(
+                    favoriteRecipes = favRecipes,
+                    favoriteIds = vm.favoriteIds,
+                    onToggleFavorite = {id -> vm.toggleFavorite(id)},
+                    onRecipeClick = { id -> navController.navigate("details/#id")}
+                    vm = vm
+                )
+            }
+
+            composable("details/{id}") { backStackEntry ->
+                val id = backStackEntry.arguments?.getString("id")?.toIntOrNull() ?: -1
+                DetailScreen(
+                    vm = vm,
+                    id = id,
+                    onBack = { navController.popBackStack() }
                 )
             }
         }
-    ) {
-        Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-            Greeting(
-                name = "Android",
-                modifier = Modifier.padding(innerPadding)
-            )
-        }
     }
 }
 
-enum class AppDestinations(
-    val label: String,
-    val icon: ImageVector,
-) {
-    HOME("Home", Icons.Default.Home),
-    FAVORITES("Favorites", Icons.Default.Favorite),
-    // PROFILE("Profile", Icons.Default.AccountBox),
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    RecipeBookAppTheme {
-        Greeting("Android")
-    }
-}

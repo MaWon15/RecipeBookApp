@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.recipebookapp.data.Recipe
 import androidx.compose.material3.HorizontalDivider
+import com.example.recipebookapp.vm.RecipeViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -23,7 +24,8 @@ fun HomeScreen(
     favoriteIds: Set<Int>,
     onRecipeClick: (Int) -> Unit,
     onToggleFavorite: (Int) -> Unit,
-    onOpenFavorites: () -> Unit
+    onOpenFavorites: () -> Unit,
+    vm: RecipeViewModel
 ) {
     Scaffold(
         topBar = {
