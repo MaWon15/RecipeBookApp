@@ -19,3 +19,11 @@ app/
 Recording Vid: Gustavo
 
 **DESCRIPTION**
+- The Recipe Book Application which contains a lot of Food Recipe from so many Countries so that help us easy self-cooking our favorite food at home.
+- With flexible interface, and esay using, our application promise will bringing convenience to users.
+
+**SCREENSHOTS**
+![HomeScreen](HomeScreen.png)
+![Favorite](FavoriteScreen.png)
+![Home/DetailScreen](Home_RecipeDetailScreen.png)
+![Favorite/DetailScreen](Favorite_RecipeDetailScreen.png)
